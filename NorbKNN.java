@@ -18,28 +18,49 @@ import weka.core.Instances;
 
 public class NorbKNN {
 	
-	static int width = 32;
-	static int height = 32;
-	static String repo = ".."+File.separator+"Data"+File.separator+"all32"+File.separator+"L"+File.separator;
-	static boolean writeDatasetFile = false; //write dataset file or not
-	static Instances dataset;
+	private int width;
+	private int height;
+	private String repo;
+	private boolean writeDatasetFile; //write dataset file or not
+	private String testFile;
+	private String trainFile;
+	private Instances dataset;
 	
 	//this info will be read in the train_conf file
-	static int nClass; //number of classes
-	static int nObjxClass; //number of objects
-	static int nSeqxObjTrain; //number of sequence for each object
-	static double[] prob = new double[4]; //probability for elevation, azimuth, lighting and to flip back
-	static int seqLen; //length of each sequence
-	static int seed; //seed for random number generator
-	static int nSeqxObj; //number of sequence for each object in the test set
-	static int minDist; //minimum distance from the most similar frame in the training set for each object
+	private int nClass; //number of classes
+	private int nObjxClass; //number of objects
+	private int nSeqxObjTrain; //number of sequence for each object
+	private double[] prob = new double[4]; //probability for elevation, azimuth, lighting and to flip back
+	private int seqLen; //length of each sequence
+	private int seed; //seed for random number generator
+	private int nSeqxObj; //number of sequence for each object in the test set
+	private int minDist; //minimum distance from the most similar frame in the training set for each object
 	
-	public static void skipLines(BufferedReader reader, int n) throws IOException{
+	public NorbKNN(int width, int height, String repo, String trainFile, String testFile, boolean writeDatasetFile) throws Exception {
+		this.width = width;
+		this.height = height;
+		this.repo = ".."+File.separator+"Data"+File.separator+"all32"+File.separator+"L"+File.separator;
+		this.writeDatasetFile = writeDatasetFile; 
+	}
+	
+	public NorbKNN() throws Exception{
+		//default values
+		this(
+			32,
+			32,
+			".."+File.separator+"Data"+File.separator+"all32"+File.separator+"L"+File.separator,
+			"train_conf.txt",
+			"test_conf.txt",
+			false
+			);
+	}
+	
+	private void skipLines(BufferedReader reader, int n) throws IOException{
 		for(int i=0; i<n; i++)
 			reader.readLine();
 	}
 	
-	public static byte[] extractImg(int clas, String fileName) throws IOException{
+	private byte[] extractImg(int clas, String fileName) throws IOException{
 		BufferedImage image = ImageIO.read(new File(repo + clas + File.separator + fileName));
 		Raster raster = image.getData();
 		byte[] img = new byte[width*height];
@@ -51,7 +72,7 @@ public class NorbKNN {
 		}
 		return img;
 	}
-	public static void writeDataset(String datasetFileName, BufferedReader reader_train, BufferedReader reader_test) throws IOException{
+	private void writeDataset(String datasetFileName, BufferedReader reader_train, BufferedReader reader_test) throws IOException{
 		File dataset = new File(datasetFileName);
 		BufferedWriter writer_dataset = new BufferedWriter(new FileWriter(dataset));
 		
@@ -104,10 +125,10 @@ public class NorbKNN {
 		writer_dataset.close();
 	}
 	
-	public static void readTrainTestFiles() throws IOException {
+	private void readTrainTestFiles() throws IOException {
 
-		File train = new File("train_conf.txt");
-		File test = new File("test_conf.txt");
+		File train = new File(trainFile);
+		File test = new File(testFile);
 		BufferedReader reader_train = new BufferedReader(new FileReader(train));
 		BufferedReader reader_test = new BufferedReader(new FileReader(test));
 
@@ -208,8 +229,7 @@ public class NorbKNN {
 		reader_train.close();
 		reader_test.close();
 	}
- 
-	public static void main(String[] args) throws Exception {
+	public double createDataseAndTest() throws Exception{
 		readTrainTestFiles();
 		//System.exit(1);
 		
@@ -248,7 +268,15 @@ public class NorbKNN {
 			if(test[i].classValue() == predClas[i])
 				guessed++;
 		}
-		System.out.println("Accuracy: " + ((double)guessed/nTestInst)*100 + "%");
-		
-	}
+		double accuracy = ((double)guessed/nTestInst)*100;
+		//System.out.println("Accuracy: " + accuracy + "%");
+		//return the accuracy
+		return accuracy;
+	}	
+	
+    public static void main(String args[]) throws Exception{
+    	NorbKNN knn = new NorbKNN();
+    	double accuracy = knn.createDataseAndTest();
+    	System.out.println("Accuracy: " + accuracy + "%");
+    }
 }

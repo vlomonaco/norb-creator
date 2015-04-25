@@ -15,6 +15,9 @@ import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
+import javax.swing.SwingUtilities;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 
 /**
  *
@@ -34,7 +37,7 @@ public class NorbSeqExplorer extends javax.swing.JFrame {
     private String[][][][] sequences; //image names in each sequence
     private int nSeqxObj; //Current nObjx
     
-    private String repo = "/home/vincenzo/MEGA/Università/Magistrale/Tirocinio/smallNORB/Data/all32/L";
+    private String repo = "";
     //current image to show
     private int currentClass = 0; 
     private int currentObj = 0;
@@ -43,8 +46,13 @@ public class NorbSeqExplorer extends javax.swing.JFrame {
     /**
      * Creates new form NewJFrame
      */
-    public NorbSeqExplorer() {
+    public NorbSeqExplorer(String repo) {
+    	this.repo = repo;
         initComponents();
+    }
+    
+    public NorbSeqExplorer() {
+    	initComponents();
     }
 
     /**
@@ -89,7 +97,11 @@ public class NorbSeqExplorer extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Images directory"));
 
-        jTextField1.setText("Select your images repository (one directory containing all the 5 classes)");
+        if (repo.equals(""))
+        	jTextField1.setText("Select your images repository (one directory containing all the 5 classes)");
+        else
+        	jTextField1.setText(repo);
+        
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -129,6 +141,29 @@ public class NorbSeqExplorer extends javax.swing.JFrame {
                 jTextField6ActionPerformed(evt);
             }
         });
+        
+        jTextField6.getDocument().addDocumentListener(new DocumentListener() {
+
+			@Override
+			public void changedUpdate(DocumentEvent arg0) {
+				currentClass = Integer.parseInt(jTextField6.getText());
+				currentFrame = 0;
+				updateImage();
+				jTextField10.setText(Integer.toString(currentFrame));
+
+	        }
+			
+			@Override
+			public void insertUpdate(DocumentEvent arg0) {
+				currentClass = Integer.parseInt(jTextField6.getText());
+				currentFrame = 0;
+				updateImage();
+				jTextField10.setText(Integer.toString(currentFrame));
+			}
+
+			@Override
+			public void removeUpdate(DocumentEvent arg0) {}
+        });
 
         jLabel7.setText("Seq");
 
@@ -138,6 +173,28 @@ public class NorbSeqExplorer extends javax.swing.JFrame {
                 jTextField7ActionPerformed(evt);
             }
         });
+        
+        jTextField7.getDocument().addDocumentListener(new DocumentListener() {
+
+  			@Override
+  			public void changedUpdate(DocumentEvent arg0) {
+  				currentSeq = Integer.parseInt(jTextField7.getText());
+				currentFrame = 0;
+  				updateImage();
+  				jTextField10.setText(Integer.toString(currentFrame));
+  	        }
+  			
+  			@Override
+  			public void insertUpdate(DocumentEvent arg0) {
+  				currentSeq = Integer.parseInt(jTextField7.getText());
+				currentFrame = 0;
+  				updateImage();
+  				jTextField10.setText(Integer.toString(currentFrame));
+  			}
+
+  			@Override
+  			public void removeUpdate(DocumentEvent arg0) {}
+          });
 
         jLabel9.setText("Obj");
 
@@ -147,6 +204,28 @@ public class NorbSeqExplorer extends javax.swing.JFrame {
                 jTextField9ActionPerformed(evt);
             }
         });
+        
+        jTextField9.getDocument().addDocumentListener(new DocumentListener() {
+
+  			@Override
+  			public void changedUpdate(DocumentEvent arg0) {
+  				currentObj = Integer.parseInt(jTextField9.getText());
+				currentFrame = 0;
+  				updateImage();
+  				jTextField10.setText(Integer.toString(currentFrame));
+  	        }
+  			
+  			@Override
+  			public void insertUpdate(DocumentEvent arg0) {
+  				currentObj = Integer.parseInt(jTextField9.getText());
+				currentFrame = 0;
+  				updateImage();
+  				jTextField10.setText(Integer.toString(currentFrame));
+  			}
+
+  			@Override
+  			public void removeUpdate(DocumentEvent arg0) {}
+          });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -202,6 +281,24 @@ public class NorbSeqExplorer extends javax.swing.JFrame {
                 jTextField10ActionPerformed(evt);
             }
         });
+        
+        jTextField10.getDocument().addDocumentListener(new DocumentListener() {
+
+  			@Override
+  			public void changedUpdate(DocumentEvent arg0) {
+  				currentFrame = Integer.parseInt(jTextField10.getText());
+  				updateImage();
+  	        }
+  			
+  			@Override
+  			public void insertUpdate(DocumentEvent arg0) {
+  				currentFrame = Integer.parseInt(jTextField10.getText());
+  				updateImage();
+  			}
+
+  			@Override
+  			public void removeUpdate(DocumentEvent arg0) {}
+          });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -372,7 +469,6 @@ public class NorbSeqExplorer extends javax.swing.JFrame {
         } catch (IOException ex) {
             Logger.getLogger(NorbSeqExplorer.class.getName()).log(Level.SEVERE, null, ex);
         }
-        jTextField10.setText(Integer.toString(currentFrame));
     }
     
     private void readConfigFile(String fileName) throws IOException {
@@ -493,6 +589,8 @@ public class NorbSeqExplorer extends javax.swing.JFrame {
             Logger.getLogger(NorbSeqExplorer.class.getName()).log(Level.SEVERE, null, ex);
         }
         jLabel2.setText("Config file loaded.");
+        if(!repo.equals("")) //it is already set and we can update the image
+            updateImage();
     }                                        
 
     private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {                                            
@@ -504,6 +602,7 @@ public class NorbSeqExplorer extends javax.swing.JFrame {
         if(currentFrame>0)
             currentFrame = currentFrame-1;
         updateImage();
+        jTextField10.setText(Integer.toString(currentFrame));
     }                                        
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
@@ -511,6 +610,7 @@ public class NorbSeqExplorer extends javax.swing.JFrame {
         if(currentFrame<(seqLen-1))
             currentFrame = currentFrame+1;
         updateImage();
+        jTextField10.setText(Integer.toString(currentFrame));
     }                                        
 
     private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {                                            

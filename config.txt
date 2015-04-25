@@ -1,0 +1,49 @@
+#########################
+#      CONFIG FILE      #
+#########################
+
+#########################
+#   CONVERSION PARAMS   #
+#########################
+matlabFile: /home/vincenzo/MEGA/Università/Magistrale/Tirocinio/smallNORB/Data/Matlab/smallnorb-5x46789x9x18x6x2x96x96-training-
+destDir: /home/vincenzo/MEGA/Università/Magistrale/Tirocinio/smallNORB/Data/all32
+convert(yes/no): no
+inputWidth: 96
+inputHeight: 96
+scaleFactor: 3
+#########################
+
+#########################
+#     COMMON PARAMS     #
+#########################
+imagesRepo: /home/vincenzo/MEGA/Università/Magistrale/Tirocinio/smallNORB/Data/all32/L
+nClass: 2
+nObjxClass: 10
+elevationProb: 0.55
+azimuthProb: 0.35
+lightingProb: 0.1
+flipProb: 0
+seqLen: 40
+#########################
+
+#########################
+#     TRAIN PARAMS      #
+#########################
+fileName: train_conf.txt
+nSeqxObj: 1
+seed: 1
+#########################
+
+#########################
+#      TEST PARAMS      #
+#########################
+fileName: test_conf.txt
+nSeqxObj: 1
+seed: 2
+minDistance: 0
+#########################
+
+#########################
+#      END CONFIG       #
+#########################
+

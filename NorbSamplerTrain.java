@@ -4,76 +4,33 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
 
-public class NorbSamplerTrain {
+public class NorbSamplerTrain extends NorbSampler {
 	
-	static int nClass = 2; //5; number of classes
-	static int nObjxClass = 10;//10; //number of objects per class
-	static int nSeqxObj = 1;//5; //number of sequence for each object
-	static double prob[] = {0.3, 0.3, 0.2, 0.2}; //probability for elevation, azimuth, lighting and to flip back
-	static int seqLen = 10; //length of each sequence
-	static int seed = 1234;
-	static Random rn = new Random(seed);
-	
-	public static int randInt(int min, int max) {
-	    return rn.nextInt((max - min) + 1) + min;
+	public NorbSamplerTrain() throws IOException{
+		//default values
+		this(	"train_conf.txt",
+				2,	//number of classes
+				10, //number of objects per class
+				1,	//number of sequence for each object
+				new double[]{0.35, 0.55, 0.1, 0.05},	//probability for elevation, azimuth, lighting and to flip back
+				30, //length of each sequence
+				1);	//seed for random generator
 	}
 	
-	public static int moveElevation(int pastElev) {
-	    double dice = rn.nextDouble();
-	    if(dice <= 0.5)
-	    	if(pastElev < 8)
-	    		return pastElev+1;
-	    	else
-	    		return pastElev-1;
-	    
-	    else
-	    	if(pastElev > 0)
-	    		return pastElev-1;
-	    	else
-	    		return pastElev+1;
-	    
-	}
-	
-	public static int moveAzimuth(int pastAzim) {
-	    double dice = rn.nextDouble();
-	    if(dice <= 0.5)
-	    	if(pastAzim < 34)
-	    		return pastAzim+2;
-	    	else
-	    		return pastAzim-2;
-	    
-	    else
-	    	if(pastAzim > 0)
-	    		return pastAzim-2;
-	    	else
-	    		return pastAzim+2;
-	    
-	}
-	
-	public static int moveLighting(int pastLight) {
-	    double dice = rn.nextDouble();
-	    if(dice <= 0.5)
-	    	if(pastLight < 5)
-	    		return pastLight+1;
-	    	else
-	    		return pastLight-1;
-	    
-	    else
-	    	if(pastLight > 0)
-	    		return pastLight-1;
-	    	else
-	    		return pastLight+1;
-	}
-	
-	public static boolean flip(int nFrame) {
-		if (nFrame == 0)
-	    	return false;
-	    else
-	    	return true;
-	}
-	
-	public static void main(String[] args) throws IOException{
+	public NorbSamplerTrain(String fileName, int nClass, int nObjxClass, int nSeqxObj, double[] prob, int seqLen, int seed) throws IOException{
+		super(	
+				fileName, //name of the train config file
+				nClass,	//number of classes
+				nObjxClass, //number of objects per class
+				nSeqxObj,	//number of sequence for each object
+				prob,	//probability for elevation, azimuth, lighting and to flip back
+				seqLen, //length of each sequence
+				seed);	//seed for random generator
 		
+		writeTrainConfig();
+	}
+
+	public void writeTrainConfig() throws IOException{
 		File f = new File("train_conf.txt");
 		BufferedWriter writer = new BufferedWriter(new FileWriter(f));
 		
@@ -110,47 +67,26 @@ public class NorbSamplerTrain {
 					int azimuth = randInt(0,17)*2;
 					// 0 to 5 (lighting)
 					int lighting = randInt(0,5); 
-					//variables used to remember the previous move
-					int exElevation=0, exAzimuth=0, exLighting=0;
+
 					String firstFrame = String.format("%02d_%02d_%02d_%02d.bmp", obj,elevation, azimuth, lighting); 
 					writer.write(firstFrame + "\n");
 					
 					//for each frame in the sequence
 					for(int j=0; j<seqLen-1; j++){
 						//choosing next move 
-						//rollAgain == true means that a new random extraction is needed
-						boolean  rollAgain = false; 
-						do{
-							double dice = rn.nextDouble();
-							//move elevation
-							if(dice >= 0 && dice < prob[0]){
-								exElevation = elevation;
-								elevation = moveElevation(elevation);
-								rollAgain = false;
-							}
-							//move azimuth
-							else if (dice >= prob[0] && dice < prob[0]+prob[1]){
-								exAzimuth = azimuth;
-								azimuth = moveAzimuth(azimuth);
-								rollAgain = false;
-							}
-							//move lighting
-							else if (dice >= prob[0]+prob[1] && dice < prob[0]+prob[1]+prob[2]){
-								exLighting = lighting;
-								lighting = moveLighting(lighting);
-								rollAgain = false;
-							}
-							//move back
-							else{
-								if(!flip(seq))
-									rollAgain = true;
-								else{
-									elevation = exElevation;
-									azimuth = exAzimuth;
-									lighting = exLighting;
-								}			
-							}
-						}while(rollAgain);
+
+						double dice = rn.nextDouble();
+						//move elevation
+						if(dice >= 0 && dice < prob[0])
+							elevation = moveElevation(elevation);
+							
+						//move azimuth
+						else if (dice >= prob[0] && dice < prob[0]+prob[1])
+							azimuth = moveAzimuth(azimuth);
+							
+						//move lighting
+						else 
+							lighting = moveLighting(lighting);
 						
 						//writing frame
 						String frame = String.format("%02d_%02d_%02d_%02d.bmp", obj, elevation, azimuth, lighting); 
@@ -161,4 +97,8 @@ public class NorbSamplerTrain {
 		}
 		writer.close();
 	}
+	
+    public static void main(String args[]) throws IOException{
+    	NorbSamplerTrain sampler = new NorbSamplerTrain();
+    }
 }

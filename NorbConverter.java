@@ -6,31 +6,51 @@ import java.io.File;
 
 class NorbConverter{
 		
-	// Dati da variare !
-    static int inputWidth = 96;
-    static int inputHeight = 96;
-   
-    /*static String dataset = ".."+File.separator+"Data"+File.separator+"Matlab"+File.separator+
-			"smallnorb-5x01235x9x18x6x2x96x96-testing-";*/
-    static String dataset = ".."+File.separator+"Data"+File.separator+"Matlab"+File.separator+
-    						"smallnorb-5x46789x9x18x6x2x96x96-training-";
-    static String targetDir = ".."+File.separator+"Data"+File.separator+"all32";
-    static int scaleFactor = 3;
-    static int outputWidth = inputWidth / scaleFactor;
-    static int outputHeight = inputHeight / scaleFactor;
+	//data
+    private int inputWidth;
+    private int inputHeight;
+    private String dataset;
+    private String targetDir;
+    private int scaleFactor;
+    private int outputWidth;
+    private int outputHeight;
+    
+    public NorbConverter(int inputWidth, int inputHeight, String dataset, String targetDir, int scaleFactor){
+    	this.inputWidth = inputWidth;
+    	this.inputHeight = inputHeight;
+    	this.dataset = dataset;
+    	this.targetDir = targetDir;
+    	this.scaleFactor = scaleFactor;
+        outputWidth = inputWidth / scaleFactor;
+        outputHeight = inputHeight / scaleFactor;
+        extractAndScaleImages();
+        
+    }
+        
+    public NorbConverter(){
+        /*static String dataset = ".."+File.separator+"Data"+File.separator+"Matlab"+File.separator+
+    			"smallnorb-5x01235x9x18x6x2x96x96-testing-";*/
+    	//default values
+    	this(	96,
+    			96, 
+    			".."+File.separator+"Data"+File.separator+"Matlab"+File.separator+"smallnorb-5x46789x9x18x6x2x96x96-training-",
+    			".."+File.separator+"Data"+File.separator+"all32",
+    			3
+    		);
+	}
 
-	static int conv(int i) {
+	private int conv(int i) {
 		//return((i&0xff)<<24)+((i&0xff00)<<8)+((i&0xff0000)>>8)+((i>>24)&0xff);
 		return i>>24;
 	}
 
-    static boolean skipPattern(int instance, int elevation, int azimuth, int lighting){
+    private boolean skipPattern(int instance, int elevation, int azimuth, int lighting){
             // if (lighting!=0) return true;
             // if (elevation != 0) return true;
             return false;
     }
 	
-	static void headerProcessing(DataInputStream f, String type)
+	private void headerProcessing(DataInputStream f, String type)
 	{
 		int dataType, ndim, count, size;
 		try {
@@ -49,7 +69,7 @@ class NorbConverter{
 		} catch (Exception e) { /* do nothing */ }
 	}
 
-    static byte[] downscaleFrameResolution(byte[] frameBuffer){
+    private byte[] downscaleFrameResolution(byte[] frameBuffer){
 		int[] tempBuffer = new int[inputWidth * inputHeight];
 		byte[] image = new byte[outputWidth * outputHeight];
             
@@ -88,8 +108,8 @@ class NorbConverter{
 		}
 		return image;
     }
-        
-    public static void main(String[] args){
+    
+    public void extractAndScaleImages(){
 		try{
 			byte[] buffer = new byte[inputWidth * inputHeight];
 			int patternCount = 24300;
@@ -167,6 +187,10 @@ class NorbConverter{
 			datFile.close();
 			catFile.close();
 			infoFile.close();
-		} catch (Exception e) { System.out.println(e); }        
-	}
+		} catch (Exception e) { System.out.println(e); }  
+    }
+    
+    public static void main(String args[]){
+    	NorbConverter converter = new NorbConverter();
+    }
 }

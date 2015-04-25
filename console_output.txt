@@ -1,425 +1,801 @@
-[Train] processing: 00_02_10_05.bmp
-[Train] processing: 00_03_10_05.bmp
-[Train] processing: 00_03_12_05.bmp
-[Train] processing: 00_04_12_05.bmp
-[Train] processing: 00_05_12_05.bmp
-[Train] processing: 00_06_12_05.bmp
-[Train] processing: 00_07_12_05.bmp
-[Train] processing: 00_07_10_05.bmp
-[Train] processing: 00_07_08_05.bmp
-[Train] processing: 00_08_08_05.bmp
-[Train] processing: 01_00_20_01.bmp
-[Train] processing: 01_00_20_02.bmp
-[Train] processing: 01_01_20_02.bmp
-[Train] processing: 01_01_18_02.bmp
-[Train] processing: 01_01_20_02.bmp
-[Train] processing: 01_00_20_02.bmp
-[Train] processing: 01_01_20_02.bmp
-[Train] processing: 01_02_20_02.bmp
-[Train] processing: 01_02_18_02.bmp
-[Train] processing: 01_02_18_03.bmp
-[Train] processing: 02_01_00_05.bmp
-[Train] processing: 02_02_00_05.bmp
-[Train] processing: 02_01_00_05.bmp
-[Train] processing: 02_01_02_05.bmp
-[Train] processing: 02_02_02_05.bmp
-[Train] processing: 02_02_00_05.bmp
-[Train] processing: 02_02_00_04.bmp
-[Train] processing: 02_02_00_03.bmp
-[Train] processing: 02_02_02_03.bmp
-[Train] processing: 02_02_00_03.bmp
-[Train] processing: 03_08_22_03.bmp
-[Train] processing: 03_07_22_03.bmp
-[Train] processing: 03_07_24_03.bmp
-[Train] processing: 03_06_24_03.bmp
-[Train] processing: 03_06_22_03.bmp
-[Train] processing: 03_06_24_03.bmp
-[Train] processing: 03_06_24_02.bmp
-[Train] processing: 03_07_24_02.bmp
-[Train] processing: 03_07_22_02.bmp
-[Train] processing: 03_07_22_03.bmp
-[Train] processing: 04_04_04_03.bmp
-[Train] processing: 04_04_04_04.bmp
-[Train] processing: 04_04_04_03.bmp
-[Train] processing: 04_03_04_03.bmp
-[Train] processing: 04_02_04_03.bmp
-[Train] processing: 04_02_02_03.bmp
-[Train] processing: 04_02_02_02.bmp
-[Train] processing: 04_02_04_02.bmp
-[Train] processing: 04_02_02_02.bmp
-[Train] processing: 04_03_02_02.bmp
-[Train] processing: 05_00_28_02.bmp
-[Train] processing: 05_01_28_02.bmp
-[Train] processing: 05_00_28_02.bmp
-[Train] processing: 05_00_28_03.bmp
-[Train] processing: 05_01_28_03.bmp
-[Train] processing: 05_01_26_03.bmp
-[Train] processing: 05_01_24_03.bmp
-[Train] processing: 05_02_24_03.bmp
-[Train] processing: 05_02_22_03.bmp
-[Train] processing: 05_01_22_03.bmp
-[Train] processing: 06_01_10_02.bmp
-[Train] processing: 06_00_10_02.bmp
-[Train] processing: 06_00_12_02.bmp
-[Train] processing: 06_00_12_03.bmp
-[Train] processing: 06_00_12_02.bmp
-[Train] processing: 06_00_10_02.bmp
-[Train] processing: 06_01_10_02.bmp
-[Train] processing: 06_01_08_02.bmp
-[Train] processing: 06_02_08_02.bmp
-[Train] processing: 06_03_08_02.bmp
-[Train] processing: 07_04_04_03.bmp
-[Train] processing: 07_04_04_04.bmp
-[Train] processing: 07_04_06_04.bmp
-[Train] processing: 07_04_06_03.bmp
-[Train] processing: 07_04_06_04.bmp
-[Train] processing: 07_03_06_04.bmp
-[Train] processing: 07_04_06_04.bmp
-[Train] processing: 07_04_06_05.bmp
-[Train] processing: 07_04_06_04.bmp
-[Train] processing: 07_04_04_04.bmp
-[Train] processing: 08_00_14_01.bmp
-[Train] processing: 08_01_14_01.bmp
-[Train] processing: 08_01_12_01.bmp
-[Train] processing: 08_01_10_01.bmp
-[Train] processing: 08_00_10_01.bmp
-[Train] processing: 08_00_10_02.bmp
-[Train] processing: 08_00_12_02.bmp
-[Train] processing: 08_00_12_03.bmp
-[Train] processing: 08_01_12_03.bmp
-[Train] processing: 08_00_12_03.bmp
-[Train] processing: 09_00_06_02.bmp
-[Train] processing: 09_00_04_02.bmp
-[Train] processing: 09_01_04_02.bmp
-[Train] processing: 09_00_04_02.bmp
-[Train] processing: 09_00_02_02.bmp
-[Train] processing: 09_00_00_02.bmp
-[Train] processing: 09_01_00_02.bmp
-[Train] processing: 09_01_02_02.bmp
-[Train] processing: 09_02_02_02.bmp
-[Train] processing: 09_02_00_02.bmp
-[Train] processing: 00_04_26_00.bmp
-[Train] processing: 00_04_24_00.bmp
-[Train] processing: 00_05_24_00.bmp
-[Train] processing: 00_04_24_00.bmp
-[Train] processing: 00_04_26_00.bmp
-[Train] processing: 00_04_26_01.bmp
-[Train] processing: 00_04_28_01.bmp
-[Train] processing: 00_03_28_01.bmp
-[Train] processing: 00_04_28_01.bmp
-[Train] processing: 00_04_30_01.bmp
-[Train] processing: 01_08_20_03.bmp
-[Train] processing: 01_08_20_04.bmp
-[Train] processing: 01_08_18_04.bmp
-[Train] processing: 01_07_18_04.bmp
-[Train] processing: 01_07_16_04.bmp
-[Train] processing: 01_07_18_04.bmp
-[Train] processing: 01_07_18_03.bmp
-[Train] processing: 01_07_16_03.bmp
-[Train] processing: 01_07_18_03.bmp
-[Train] processing: 01_08_18_03.bmp
-[Train] processing: 02_02_34_01.bmp
-[Train] processing: 02_01_34_01.bmp
-[Train] processing: 02_01_32_01.bmp
-[Train] processing: 02_01_32_00.bmp
-[Train] processing: 02_00_32_00.bmp
-[Train] processing: 02_01_32_00.bmp
-[Train] processing: 02_01_30_00.bmp
-[Train] processing: 02_01_30_01.bmp
-[Train] processing: 02_02_30_01.bmp
-[Train] processing: 02_02_30_02.bmp
-[Train] processing: 03_08_12_01.bmp
-[Train] processing: 03_07_12_01.bmp
-[Train] processing: 03_08_12_01.bmp
-[Train] processing: 03_08_10_01.bmp
-[Train] processing: 03_08_12_01.bmp
-[Train] processing: 03_08_14_01.bmp
-[Train] processing: 03_08_12_01.bmp
-[Train] processing: 03_08_12_00.bmp
-[Train] processing: 03_07_12_00.bmp
-[Train] processing: 03_06_12_00.bmp
-[Train] processing: 04_00_20_05.bmp
-[Train] processing: 04_01_20_05.bmp
-[Train] processing: 04_02_20_05.bmp
-[Train] processing: 04_02_20_04.bmp
-[Train] processing: 04_02_20_05.bmp
-[Train] processing: 04_02_18_05.bmp
-[Train] processing: 04_02_20_05.bmp
-[Train] processing: 04_01_20_05.bmp
-[Train] processing: 04_01_20_04.bmp
-[Train] processing: 04_00_20_04.bmp
-[Train] processing: 05_07_02_01.bmp
-[Train] processing: 05_06_02_01.bmp
-[Train] processing: 05_06_04_01.bmp
-[Train] processing: 05_06_04_02.bmp
-[Train] processing: 05_07_04_02.bmp
-[Train] processing: 05_07_02_02.bmp
-[Train] processing: 05_07_04_02.bmp
-[Train] processing: 05_07_04_03.bmp
-[Train] processing: 05_06_04_03.bmp
-[Train] processing: 05_07_04_03.bmp
-[Train] processing: 06_03_28_03.bmp
-[Train] processing: 06_03_28_04.bmp
-[Train] processing: 06_03_28_05.bmp
-[Train] processing: 06_02_28_05.bmp
-[Train] processing: 06_02_28_04.bmp
-[Train] processing: 06_03_28_04.bmp
-[Train] processing: 06_03_30_04.bmp
-[Train] processing: 06_03_32_04.bmp
-[Train] processing: 06_03_32_03.bmp
-[Train] processing: 06_04_32_03.bmp
-[Train] processing: 07_05_34_04.bmp
-[Train] processing: 07_05_32_04.bmp
-[Train] processing: 07_05_30_04.bmp
-[Train] processing: 07_04_30_04.bmp
-[Train] processing: 07_05_30_04.bmp
-[Train] processing: 07_04_30_04.bmp
-[Train] processing: 07_04_32_04.bmp
-[Train] processing: 07_04_34_04.bmp
-[Train] processing: 07_04_32_04.bmp
-[Train] processing: 07_04_34_04.bmp
-[Train] processing: 08_05_34_01.bmp
-[Train] processing: 08_05_32_01.bmp
-[Train] processing: 08_05_30_01.bmp
-[Train] processing: 08_05_32_01.bmp
-[Train] processing: 08_04_32_01.bmp
-[Train] processing: 08_04_30_01.bmp
-[Train] processing: 08_04_30_02.bmp
-[Train] processing: 08_04_28_02.bmp
-[Train] processing: 08_04_30_02.bmp
-[Train] processing: 08_03_30_02.bmp
-[Train] processing: 09_02_16_01.bmp
-[Train] processing: 09_02_18_01.bmp
-[Train] processing: 09_02_20_01.bmp
-[Train] processing: 09_02_22_01.bmp
-[Train] processing: 09_02_22_00.bmp
-[Train] processing: 09_01_22_00.bmp
-[Train] processing: 09_01_24_00.bmp
-[Train] processing: 09_01_22_00.bmp
-[Train] processing: 09_00_22_00.bmp
-[Train] processing: 09_00_20_00.bmp
-[Test] processing: 00_02_02_04.bmp
-[Test] processing: 00_03_02_04.bmp
-[Test] processing: 00_04_02_04.bmp
-[Test] processing: 00_03_02_04.bmp
-[Test] processing: 00_02_02_04.bmp
-[Test] processing: 00_01_02_04.bmp
-[Test] processing: 00_01_02_03.bmp
-[Test] processing: 00_01_02_02.bmp
-[Test] processing: 00_01_04_02.bmp
-[Test] processing: 00_02_04_02.bmp
-[Test] processing: 01_05_08_02.bmp
-[Test] processing: 01_05_08_01.bmp
-[Test] processing: 01_06_08_01.bmp
-[Test] processing: 01_05_08_01.bmp
-[Test] processing: 01_04_08_01.bmp
-[Test] processing: 01_04_06_01.bmp
-[Test] processing: 01_04_06_02.bmp
-[Test] processing: 01_03_06_02.bmp
-[Test] processing: 01_03_06_03.bmp
-[Test] processing: 01_03_08_03.bmp
-[Test] processing: 02_07_30_02.bmp
-[Test] processing: 02_07_30_01.bmp
-[Test] processing: 02_07_30_00.bmp
-[Test] processing: 02_08_30_00.bmp
-[Test] processing: 02_07_30_00.bmp
-[Test] processing: 02_07_32_00.bmp
-[Test] processing: 02_07_30_00.bmp
-[Test] processing: 02_07_30_01.bmp
-[Test] processing: 02_06_30_01.bmp
-[Test] processing: 02_06_32_01.bmp
-[Test] processing: 03_01_34_01.bmp
-[Test] processing: 03_00_34_01.bmp
-[Test] processing: 03_00_32_01.bmp
-[Test] processing: 03_01_32_01.bmp
-[Test] processing: 03_01_34_01.bmp
-[Test] processing: 03_01_34_02.bmp
-[Test] processing: 03_01_32_02.bmp
-[Test] processing: 03_02_32_02.bmp
-[Test] processing: 03_02_34_02.bmp
-[Test] processing: 03_02_32_02.bmp
-[Test] processing: 04_01_12_05.bmp
-[Test] processing: 04_01_12_04.bmp
-[Test] processing: 04_00_12_04.bmp
-[Test] processing: 04_00_14_04.bmp
-[Test] processing: 04_01_14_04.bmp
-[Test] processing: 04_00_14_04.bmp
-[Test] processing: 04_00_14_03.bmp
-[Test] processing: 04_01_14_03.bmp
-[Test] processing: 04_02_14_03.bmp
-[Test] processing: 04_02_12_03.bmp
-[Test] processing: 05_03_02_02.bmp
-[Test] processing: 05_03_02_03.bmp
-[Test] processing: 05_03_04_03.bmp
-[Test] processing: 05_02_04_03.bmp
-[Test] processing: 05_02_02_03.bmp
-[Test] processing: 05_02_00_03.bmp
-[Test] processing: 05_02_02_03.bmp
-[Test] processing: 05_02_02_04.bmp
-[Test] processing: 05_02_00_04.bmp
-[Test] processing: 05_01_00_04.bmp
-[Test] processing: 06_02_00_00.bmp
-[Test] processing: 06_02_00_01.bmp
-[Test] processing: 06_03_00_01.bmp
-[Test] processing: 06_04_00_01.bmp
-[Test] processing: 06_04_02_01.bmp
-[Test] processing: 06_04_02_00.bmp
-[Test] processing: 06_03_02_00.bmp
-[Test] processing: 06_03_02_01.bmp
-[Test] processing: 06_03_02_02.bmp
-[Test] processing: 06_03_00_02.bmp
-[Test] processing: 07_04_04_02.bmp
-[Test] processing: 07_04_06_02.bmp
-[Test] processing: 07_04_04_02.bmp
-[Test] processing: 07_04_02_02.bmp
-[Test] processing: 07_03_02_02.bmp
-[Test] processing: 07_03_00_02.bmp
-[Test] processing: 07_04_00_02.bmp
-[Test] processing: 07_04_00_03.bmp
-[Test] processing: 07_04_00_02.bmp
-[Test] processing: 07_04_00_03.bmp
-[Test] processing: 08_07_22_01.bmp
-[Test] processing: 08_07_20_01.bmp
-[Test] processing: 08_07_22_01.bmp
-[Test] processing: 08_08_22_01.bmp
-[Test] processing: 08_08_22_00.bmp
-[Test] processing: 08_07_22_00.bmp
-[Test] processing: 08_07_20_00.bmp
-[Test] processing: 08_07_20_01.bmp
-[Test] processing: 08_07_18_01.bmp
-[Test] processing: 08_07_20_01.bmp
-[Test] processing: 09_03_26_01.bmp
-[Test] processing: 09_03_26_02.bmp
-[Test] processing: 09_02_26_02.bmp
-[Test] processing: 09_02_26_01.bmp
-[Test] processing: 09_02_26_00.bmp
-[Test] processing: 09_02_28_00.bmp
-[Test] processing: 09_02_28_01.bmp
-[Test] processing: 09_02_28_00.bmp
-[Test] processing: 09_02_28_01.bmp
-[Test] processing: 09_02_28_02.bmp
-[Test] processing: 00_01_14_05.bmp
-[Test] processing: 00_01_14_04.bmp
-[Test] processing: 00_01_12_04.bmp
-[Test] processing: 00_01_12_05.bmp
-[Test] processing: 00_02_12_05.bmp
-[Test] processing: 00_02_12_04.bmp
-[Test] processing: 00_02_12_03.bmp
-[Test] processing: 00_02_14_03.bmp
-[Test] processing: 00_02_16_03.bmp
-[Test] processing: 00_03_16_03.bmp
-[Test] processing: 01_08_02_05.bmp
-[Test] processing: 01_08_00_05.bmp
-[Test] processing: 01_08_02_05.bmp
-[Test] processing: 01_07_02_05.bmp
-[Test] processing: 01_06_02_05.bmp
-[Test] processing: 01_07_02_05.bmp
-[Test] processing: 01_06_02_05.bmp
-[Test] processing: 01_06_00_05.bmp
-[Test] processing: 01_06_00_04.bmp
-[Test] processing: 01_06_00_05.bmp
-[Test] processing: 02_07_18_03.bmp
-[Test] processing: 02_06_18_03.bmp
-[Test] processing: 02_06_20_03.bmp
-[Test] processing: 02_06_20_02.bmp
-[Test] processing: 02_07_20_02.bmp
-[Test] processing: 02_07_18_02.bmp
-[Test] processing: 02_07_20_02.bmp
-[Test] processing: 02_07_20_01.bmp
-[Test] processing: 02_07_20_02.bmp
-[Test] processing: 02_08_20_02.bmp
-[Test] processing: 03_08_20_01.bmp
-[Test] processing: 03_07_20_01.bmp
-[Test] processing: 03_08_20_01.bmp
-[Test] processing: 03_08_18_01.bmp
-[Test] processing: 03_08_18_02.bmp
-[Test] processing: 03_07_18_02.bmp
-[Test] processing: 03_07_18_01.bmp
-[Test] processing: 03_07_16_01.bmp
-[Test] processing: 03_07_16_02.bmp
-[Test] processing: 03_07_16_01.bmp
-[Test] processing: 04_05_04_05.bmp
-[Test] processing: 04_04_04_05.bmp
-[Test] processing: 04_04_06_05.bmp
-[Test] processing: 04_03_06_05.bmp
-[Test] processing: 04_04_06_05.bmp
-[Test] processing: 04_04_08_05.bmp
-[Test] processing: 04_05_08_05.bmp
-[Test] processing: 04_05_08_04.bmp
-[Test] processing: 04_04_08_04.bmp
-[Test] processing: 04_05_08_04.bmp
-[Test] processing: 05_02_04_05.bmp
-[Test] processing: 05_01_04_05.bmp
-[Test] processing: 05_01_04_04.bmp
-[Test] processing: 05_01_06_04.bmp
-[Test] processing: 05_00_06_04.bmp
-[Test] processing: 05_01_06_04.bmp
-[Test] processing: 05_01_06_03.bmp
-[Test] processing: 05_01_06_04.bmp
-[Test] processing: 05_01_08_04.bmp
-[Test] processing: 05_01_06_04.bmp
-[Test] processing: 06_02_22_05.bmp
-[Test] processing: 06_02_20_05.bmp
-[Test] processing: 06_03_20_05.bmp
-[Test] processing: 06_03_18_05.bmp
-[Test] processing: 06_03_20_05.bmp
-[Test] processing: 06_03_22_05.bmp
-[Test] processing: 06_02_22_05.bmp
-[Test] processing: 06_02_24_05.bmp
-[Test] processing: 06_02_24_04.bmp
-[Test] processing: 06_02_24_05.bmp
-[Test] processing: 07_01_24_01.bmp
-[Test] processing: 07_01_24_00.bmp
-[Test] processing: 07_00_24_00.bmp
-[Test] processing: 07_00_24_01.bmp
-[Test] processing: 07_00_24_00.bmp
-[Test] processing: 07_00_22_00.bmp
-[Test] processing: 07_00_20_00.bmp
-[Test] processing: 07_00_18_00.bmp
-[Test] processing: 07_00_20_00.bmp
-[Test] processing: 07_00_20_01.bmp
-[Test] processing: 08_00_28_01.bmp
-[Test] processing: 08_01_28_01.bmp
-[Test] processing: 08_00_28_01.bmp
-[Test] processing: 08_00_28_00.bmp
-[Test] processing: 08_01_28_00.bmp
-[Test] processing: 08_00_28_00.bmp
-[Test] processing: 08_01_28_00.bmp
-[Test] processing: 08_00_28_00.bmp
-[Test] processing: 08_00_28_01.bmp
-[Test] processing: 08_00_30_01.bmp
-[Test] processing: 09_03_16_00.bmp
-[Test] processing: 09_03_16_01.bmp
-[Test] processing: 09_03_16_00.bmp
-[Test] processing: 09_03_16_01.bmp
-[Test] processing: 09_03_14_01.bmp
-[Test] processing: 09_04_14_01.bmp
-[Test] processing: 09_04_14_02.bmp
-[Test] processing: 09_04_14_03.bmp
-[Test] processing: 09_04_12_03.bmp
-[Test] processing: 09_04_14_03.bmp
-nTrainInst: 20
-nTestInst: 20
-Building the Classifier..
-Classifier built..
-real class: 0.0 Predicted: 1.0
-real class: 0.0 Predicted: 1.0
-real class: 0.0 Predicted: 1.0
-real class: 0.0 Predicted: 1.0
-real class: 0.0 Predicted: 1.0
-real class: 0.0 Predicted: 1.0
-real class: 0.0 Predicted: 1.0
-real class: 0.0 Predicted: 0.0
-real class: 0.0 Predicted: 1.0
-real class: 0.0 Predicted: 1.0
-real class: 1.0 Predicted: 1.0
-real class: 1.0 Predicted: 0.0
-real class: 1.0 Predicted: 1.0
-real class: 1.0 Predicted: 1.0
-real class: 1.0 Predicted: 1.0
-real class: 1.0 Predicted: 1.0
-real class: 1.0 Predicted: 0.0
-real class: 1.0 Predicted: 1.0
-real class: 1.0 Predicted: 1.0
-real class: 1.0 Predicted: 0.0
-Accuracy: 40.0%
+00_05_20_04
+Class: 0, Used: 0 5 20 4
+00_05_18_04
+Class: 0, Used: 0 5 18 4
+00_06_18_04
+Class: 0, Used: 0 6 18 4
+00_06_18_03
+Class: 0, Used: 0 6 18 3
+00_06_18_02
+Class: 0, Used: 0 6 18 2
+00_07_18_02
+Class: 0, Used: 0 7 18 2
+00_08_18_02
+Class: 0, Used: 0 8 18 2
+00_07_18_02
+Class: 0, Used: 0 7 18 2
+00_07_16_02
+Class: 0, Used: 0 7 16 2
+00_06_16_02
+Class: 0, Used: 0 6 16 2
+01_03_24_00
+Class: 0, Used: 1 3 24 0
+01_03_22_00
+Class: 0, Used: 1 3 22 0
+01_02_22_00
+Class: 0, Used: 1 2 22 0
+01_02_20_00
+Class: 0, Used: 1 2 20 0
+01_02_18_00
+Class: 0, Used: 1 2 18 0
+01_01_18_00
+Class: 0, Used: 1 1 18 0
+01_00_18_00
+Class: 0, Used: 1 0 18 0
+01_00_18_01
+Class: 0, Used: 1 0 18 1
+01_01_18_01
+Class: 0, Used: 1 1 18 1
+01_00_18_01
+Class: 0, Used: 1 0 18 1
+02_03_22_05
+Class: 0, Used: 2 3 22 5
+02_02_22_05
+Class: 0, Used: 2 2 22 5
+02_01_22_05
+Class: 0, Used: 2 1 22 5
+02_01_20_05
+Class: 0, Used: 2 1 20 5
+02_00_20_05
+Class: 0, Used: 2 0 20 5
+02_00_18_05
+Class: 0, Used: 2 0 18 5
+02_01_18_05
+Class: 0, Used: 2 1 18 5
+02_01_16_05
+Class: 0, Used: 2 1 16 5
+02_00_16_05
+Class: 0, Used: 2 0 16 5
+02_01_16_05
+Class: 0, Used: 2 1 16 5
+03_04_12_04
+Class: 0, Used: 3 4 12 4
+03_04_12_03
+Class: 0, Used: 3 4 12 3
+03_03_12_03
+Class: 0, Used: 3 3 12 3
+03_03_10_03
+Class: 0, Used: 3 3 10 3
+03_03_08_03
+Class: 0, Used: 3 3 8 3
+03_02_08_03
+Class: 0, Used: 3 2 8 3
+03_02_06_03
+Class: 0, Used: 3 2 6 3
+03_02_06_02
+Class: 0, Used: 3 2 6 2
+03_02_04_02
+Class: 0, Used: 3 2 4 2
+03_02_06_02
+Class: 0, Used: 3 2 6 2
+04_00_14_05
+Class: 0, Used: 4 0 14 5
+04_00_14_04
+Class: 0, Used: 4 0 14 4
+04_00_16_04
+Class: 0, Used: 4 0 16 4
+04_01_16_04
+Class: 0, Used: 4 1 16 4
+04_01_18_04
+Class: 0, Used: 4 1 18 4
+04_00_18_04
+Class: 0, Used: 4 0 18 4
+04_00_20_04
+Class: 0, Used: 4 0 20 4
+04_01_20_04
+Class: 0, Used: 4 1 20 4
+04_00_20_04
+Class: 0, Used: 4 0 20 4
+04_01_20_04
+Class: 0, Used: 4 1 20 4
+05_07_18_00
+Class: 0, Used: 5 7 18 0
+05_07_20_00
+Class: 0, Used: 5 7 20 0
+05_06_20_00
+Class: 0, Used: 5 6 20 0
+05_05_20_00
+Class: 0, Used: 5 5 20 0
+05_05_22_00
+Class: 0, Used: 5 5 22 0
+05_04_22_00
+Class: 0, Used: 5 4 22 0
+05_04_24_00
+Class: 0, Used: 5 4 24 0
+05_03_24_00
+Class: 0, Used: 5 3 24 0
+05_03_26_00
+Class: 0, Used: 5 3 26 0
+05_02_26_00
+Class: 0, Used: 5 2 26 0
+06_06_10_04
+Class: 0, Used: 6 6 10 4
+06_06_10_03
+Class: 0, Used: 6 6 10 3
+06_06_12_03
+Class: 0, Used: 6 6 12 3
+06_05_12_03
+Class: 0, Used: 6 5 12 3
+06_05_14_03
+Class: 0, Used: 6 5 14 3
+06_05_16_03
+Class: 0, Used: 6 5 16 3
+06_04_16_03
+Class: 0, Used: 6 4 16 3
+06_04_18_03
+Class: 0, Used: 6 4 18 3
+06_04_20_03
+Class: 0, Used: 6 4 20 3
+06_03_20_03
+Class: 0, Used: 6 3 20 3
+07_00_12_01
+Class: 0, Used: 7 0 12 1
+07_00_12_00
+Class: 0, Used: 7 0 12 0
+07_00_14_00
+Class: 0, Used: 7 0 14 0
+07_00_16_00
+Class: 0, Used: 7 0 16 0
+07_00_18_00
+Class: 0, Used: 7 0 18 0
+07_00_18_01
+Class: 0, Used: 7 0 18 1
+07_00_20_01
+Class: 0, Used: 7 0 20 1
+07_01_20_01
+Class: 0, Used: 7 1 20 1
+07_01_22_01
+Class: 0, Used: 7 1 22 1
+07_00_22_01
+Class: 0, Used: 7 0 22 1
+08_05_28_02
+Class: 0, Used: 8 5 28 2
+08_05_30_02
+Class: 0, Used: 8 5 30 2
+08_04_30_02
+Class: 0, Used: 8 4 30 2
+08_03_30_02
+Class: 0, Used: 8 3 30 2
+08_03_32_02
+Class: 0, Used: 8 3 32 2
+08_03_30_02
+Class: 0, Used: 8 3 30 2
+08_02_30_02
+Class: 0, Used: 8 2 30 2
+08_01_30_02
+Class: 0, Used: 8 1 30 2
+08_02_30_02
+Class: 0, Used: 8 2 30 2
+08_02_28_02
+Class: 0, Used: 8 2 28 2
+09_05_10_02
+Class: 0, Used: 9 5 10 2
+09_06_10_02
+Class: 0, Used: 9 6 10 2
+09_07_10_02
+Class: 0, Used: 9 7 10 2
+09_07_08_02
+Class: 0, Used: 9 7 8 2
+09_07_06_02
+Class: 0, Used: 9 7 6 2
+09_07_06_01
+Class: 0, Used: 9 7 6 1
+09_07_04_01
+Class: 0, Used: 9 7 4 1
+09_08_04_01
+Class: 0, Used: 9 8 4 1
+09_08_02_01
+Class: 0, Used: 9 8 2 1
+09_08_00_01
+Class: 0, Used: 9 8 0 1
+00_04_26_02
+Class: 1, Used: 0 4 26 2
+00_05_26_02
+Class: 1, Used: 0 5 26 2
+00_06_26_02
+Class: 1, Used: 0 6 26 2
+00_07_26_02
+Class: 1, Used: 0 7 26 2
+00_08_26_02
+Class: 1, Used: 0 8 26 2
+00_08_24_02
+Class: 1, Used: 0 8 24 2
+00_07_24_02
+Class: 1, Used: 0 7 24 2
+00_07_24_01
+Class: 1, Used: 0 7 24 1
+00_08_24_01
+Class: 1, Used: 0 8 24 1
+00_07_24_01
+Class: 1, Used: 0 7 24 1
+01_01_18_01
+Class: 1, Used: 1 1 18 1
+01_02_18_01
+Class: 1, Used: 1 2 18 1
+01_02_16_01
+Class: 1, Used: 1 2 16 1
+01_03_16_01
+Class: 1, Used: 1 3 16 1
+01_04_16_01
+Class: 1, Used: 1 4 16 1
+01_04_14_01
+Class: 1, Used: 1 4 14 1
+01_05_14_01
+Class: 1, Used: 1 5 14 1
+01_05_12_01
+Class: 1, Used: 1 5 12 1
+01_06_12_01
+Class: 1, Used: 1 6 12 1
+01_07_12_01
+Class: 1, Used: 1 7 12 1
+02_03_02_00
+Class: 1, Used: 2 3 2 0
+02_04_02_00
+Class: 1, Used: 2 4 2 0
+02_05_02_00
+Class: 1, Used: 2 5 2 0
+02_06_02_00
+Class: 1, Used: 2 6 2 0
+02_07_02_00
+Class: 1, Used: 2 7 2 0
+02_07_00_00
+Class: 1, Used: 2 7 0 0
+02_07_02_00
+Class: 1, Used: 2 7 2 0
+02_08_02_00
+Class: 1, Used: 2 8 2 0
+02_07_02_00
+Class: 1, Used: 2 7 2 0
+02_08_02_00
+Class: 1, Used: 2 8 2 0
+03_02_26_00
+Class: 1, Used: 3 2 26 0
+03_02_24_00
+Class: 1, Used: 3 2 24 0
+03_02_22_00
+Class: 1, Used: 3 2 22 0
+03_03_22_00
+Class: 1, Used: 3 3 22 0
+03_03_20_00
+Class: 1, Used: 3 3 20 0
+03_03_20_01
+Class: 1, Used: 3 3 20 1
+03_03_18_01
+Class: 1, Used: 3 3 18 1
+03_03_18_02
+Class: 1, Used: 3 3 18 2
+03_03_18_03
+Class: 1, Used: 3 3 18 3
+03_04_18_03
+Class: 1, Used: 3 4 18 3
+04_01_30_04
+Class: 1, Used: 4 1 30 4
+04_02_30_04
+Class: 1, Used: 4 2 30 4
+04_03_30_04
+Class: 1, Used: 4 3 30 4
+04_03_30_05
+Class: 1, Used: 4 3 30 5
+04_03_28_05
+Class: 1, Used: 4 3 28 5
+04_03_28_04
+Class: 1, Used: 4 3 28 4
+04_03_28_05
+Class: 1, Used: 4 3 28 5
+04_04_28_05
+Class: 1, Used: 4 4 28 5
+04_04_26_05
+Class: 1, Used: 4 4 26 5
+04_04_24_05
+Class: 1, Used: 4 4 24 5
+05_01_16_00
+Class: 1, Used: 5 1 16 0
+05_01_14_00
+Class: 1, Used: 5 1 14 0
+05_00_14_00
+Class: 1, Used: 5 0 14 0
+05_01_14_00
+Class: 1, Used: 5 1 14 0
+05_01_12_00
+Class: 1, Used: 5 1 12 0
+05_01_10_00
+Class: 1, Used: 5 1 10 0
+05_00_10_00
+Class: 1, Used: 5 0 10 0
+05_01_10_00
+Class: 1, Used: 5 1 10 0
+05_00_10_00
+Class: 1, Used: 5 0 10 0
+05_01_10_00
+Class: 1, Used: 5 1 10 0
+06_06_30_01
+Class: 1, Used: 6 6 30 1
+06_06_28_01
+Class: 1, Used: 6 6 28 1
+06_05_28_01
+Class: 1, Used: 6 5 28 1
+06_04_28_01
+Class: 1, Used: 6 4 28 1
+06_04_28_02
+Class: 1, Used: 6 4 28 2
+06_03_28_02
+Class: 1, Used: 6 3 28 2
+06_02_28_02
+Class: 1, Used: 6 2 28 2
+06_01_28_02
+Class: 1, Used: 6 1 28 2
+06_01_26_02
+Class: 1, Used: 6 1 26 2
+06_00_26_02
+Class: 1, Used: 6 0 26 2
+07_06_04_04
+Class: 1, Used: 7 6 4 4
+07_06_06_04
+Class: 1, Used: 7 6 6 4
+07_06_04_04
+Class: 1, Used: 7 6 4 4
+07_06_02_04
+Class: 1, Used: 7 6 2 4
+07_05_02_04
+Class: 1, Used: 7 5 2 4
+07_04_02_04
+Class: 1, Used: 7 4 2 4
+07_03_02_04
+Class: 1, Used: 7 3 2 4
+07_03_00_04
+Class: 1, Used: 7 3 0 4
+07_03_02_04
+Class: 1, Used: 7 3 2 4
+07_03_00_04
+Class: 1, Used: 7 3 0 4
+08_05_18_02
+Class: 1, Used: 8 5 18 2
+08_04_18_02
+Class: 1, Used: 8 4 18 2
+08_04_16_02
+Class: 1, Used: 8 4 16 2
+08_03_16_02
+Class: 1, Used: 8 3 16 2
+08_02_16_02
+Class: 1, Used: 8 2 16 2
+08_02_14_02
+Class: 1, Used: 8 2 14 2
+08_01_14_02
+Class: 1, Used: 8 1 14 2
+08_01_12_02
+Class: 1, Used: 8 1 12 2
+08_01_12_03
+Class: 1, Used: 8 1 12 3
+08_01_10_03
+Class: 1, Used: 8 1 10 3
+09_04_34_01
+Class: 1, Used: 9 4 34 1
+09_04_32_01
+Class: 1, Used: 9 4 32 1
+09_04_30_01
+Class: 1, Used: 9 4 30 1
+09_03_30_01
+Class: 1, Used: 9 3 30 1
+09_03_28_01
+Class: 1, Used: 9 3 28 1
+09_02_28_01
+Class: 1, Used: 9 2 28 1
+09_01_28_01
+Class: 1, Used: 9 1 28 1
+09_00_28_01
+Class: 1, Used: 9 0 28 1
+09_00_26_01
+Class: 1, Used: 9 0 26 1
+09_00_26_02
+Class: 1, Used: 9 0 26 2
+Trying: 00_04_12_02.bmp
+Accepted! dist: 4
+Trying: 00_03_12_02.bmp
+Accepted! dist: 5
+Trying: 00_02_12_02.bmp
+Accepted! dist: 8
+Trying: 00_01_12_02.bmp
+Accepted! dist: 9
+Trying: 00_01_10_02.bmp
+Accepted! dist: 10
+Trying: 00_01_08_02.bmp
+Accepted! dist: 9
+Trying: 00_01_06_02.bmp
+Accepted! dist: 10
+Trying: 00_00_06_02.bmp
+Accepted! dist: 11
+Trying: 00_01_06_02.bmp
+Accepted! dist: 10
+Trying: 00_00_06_02.bmp
+Accepted! dist: 11
+Trying: 01_08_04_01.bmp
+Accepted! dist: 14
+Trying: 01_08_02_01.bmp
+Accepted! dist: 15
+Trying: 01_07_02_01.bmp
+Accepted! dist: 14
+Trying: 01_06_02_01.bmp
+Accepted! dist: 13
+Trying: 01_06_00_01.bmp
+Accepted! dist: 14
+Trying: 01_06_02_01.bmp
+Accepted! dist: 13
+Trying: 01_06_00_01.bmp
+Accepted! dist: 14
+Trying: 01_07_00_01.bmp
+Accepted! dist: 15
+Trying: 01_07_00_02.bmp
+Accepted! dist: 16
+Trying: 01_07_02_02.bmp
+Accepted! dist: 15
+Trying: 02_06_26_03.bmp
+Accepted! dist: 7
+Trying: 02_07_26_03.bmp
+Accepted! dist: 8
+Trying: 02_08_26_03.bmp
+Accepted! dist: 9
+Trying: 02_07_26_03.bmp
+Accepted! dist: 8
+Trying: 02_08_26_03.bmp
+Accepted! dist: 9
+Trying: 02_08_26_04.bmp
+Accepted! dist: 8
+Trying: 02_07_26_04.bmp
+Accepted! dist: 7
+Trying: 02_07_24_04.bmp
+Accepted! dist: 6
+Trying: 02_08_24_04.bmp
+Accepted! dist: 7
+Trying: 02_07_24_04.bmp
+Accepted! dist: 6
+Trying: 03_01_10_01.bmp
+Accepted! dist: 4
+Trying: 03_02_10_01.bmp
+Accepted! dist: 3
+Trying: 03_02_08_01.bmp
+Accepted! dist: 2
+Trying: 03_02_08_00.bmp
+Accepted! dist: 3
+Trying: 03_03_08_00.bmp
+Accepted! dist: 4
+Trying: 03_03_06_00.bmp
+Accepted! dist: 3
+Trying: 03_03_04_00.bmp
+Accepted! dist: 3
+Trying: 03_03_02_00.bmp
+Accepted! dist: 4
+Trying: 03_04_02_00.bmp
+Accepted! dist: 5
+Trying: 03_05_02_00.bmp
+Accepted! dist: 6
+Trying: 04_02_02_02.bmp
+Accepted! dist: 10
+Trying: 04_03_02_02.bmp
+Accepted! dist: 11
+Trying: 04_04_02_02.bmp
+Accepted! dist: 12
+Trying: 04_04_02_01.bmp
+Accepted! dist: 13
+Trying: 04_04_02_00.bmp
+Accepted! dist: 14
+Trying: 04_04_02_01.bmp
+Accepted! dist: 13
+Trying: 04_05_02_01.bmp
+Accepted! dist: 14
+Trying: 04_06_02_01.bmp
+Accepted! dist: 15
+Trying: 04_07_02_01.bmp
+Accepted! dist: 16
+Trying: 04_07_00_01.bmp
+Accepted! dist: 17
+Trying: 05_04_16_02.bmp
+Accepted! dist: 5
+Trying: 05_05_16_02.bmp
+Accepted! dist: 4
+Trying: 05_05_14_02.bmp
+Accepted! dist: 6
+Trying: 05_06_14_02.bmp
+Accepted! dist: 5
+Trying: 05_06_14_01.bmp
+Accepted! dist: 4
+Trying: 05_07_14_01.bmp
+Accepted! dist: 3
+Trying: 05_08_14_01.bmp
+Accepted! dist: 4
+Trying: 05_08_14_00.bmp
+Accepted! dist: 3
+Trying: 05_07_14_00.bmp
+Accepted! dist: 2
+Trying: 05_07_14_01.bmp
+Accepted! dist: 3
+Trying: 06_02_14_01.bmp
+Accepted! dist: 5
+Trying: 06_02_14_00.bmp
+Accepted! dist: 6
+Trying: 06_02_12_00.bmp
+Accepted! dist: 6
+Trying: 06_03_12_00.bmp
+Accepted! dist: 5
+Trying: 06_04_12_00.bmp
+Accepted! dist: 4
+Trying: 06_04_10_00.bmp
+Accepted! dist: 5
+Trying: 06_05_10_00.bmp
+Accepted! dist: 4
+Trying: 06_06_10_00.bmp
+Accepted! dist: 3
+Trying: 06_07_10_00.bmp
+Accepted! dist: 4
+Trying: 06_07_08_00.bmp
+Accepted! dist: 5
+Trying: 07_03_30_00.bmp
+Accepted! dist: 7
+Trying: 07_04_30_00.bmp
+Accepted! dist: 8
+Trying: 07_05_30_00.bmp
+Accepted! dist: 9
+Trying: 07_06_30_00.bmp
+Accepted! dist: 10
+Trying: 07_07_30_00.bmp
+Accepted! dist: 11
+Trying: 07_06_30_00.bmp
+Accepted! dist: 10
+Trying: 07_06_28_00.bmp
+Accepted! dist: 9
+Trying: 07_05_28_00.bmp
+Accepted! dist: 8
+Trying: 07_04_28_00.bmp
+Accepted! dist: 7
+Trying: 07_03_28_00.bmp
+Accepted! dist: 6
+Trying: 08_06_30_01.bmp
+Accepted! dist: 2
+Trying: 08_06_28_01.bmp
+Accepted! dist: 2
+Trying: 08_05_28_01.bmp
+Accepted! dist: 1
+Trying: 08_04_28_01.bmp
+Accepted! dist: 2
+Trying: 08_03_28_01.bmp
+Accepted! dist: 2
+Trying: 08_02_28_01.bmp
+Accepted! dist: 1
+Trying: 08_02_28_00.bmp
+Accepted! dist: 2
+Trying: 08_03_28_00.bmp
+Accepted! dist: 3
+Trying: 08_03_26_00.bmp
+Accepted! dist: 4
+Trying: 08_04_26_00.bmp
+Accepted! dist: 4
+Trying: 09_06_32_04.bmp
+Accepted! dist: 13
+Trying: 09_07_32_04.bmp
+Accepted! dist: 13
+Trying: 09_08_32_04.bmp
+Accepted! dist: 14
+Trying: 09_07_32_04.bmp
+Accepted! dist: 13
+Trying: 09_07_32_03.bmp
+Accepted! dist: 12
+Trying: 09_08_32_03.bmp
+Accepted! dist: 13
+Trying: 09_07_32_03.bmp
+Accepted! dist: 12
+Trying: 09_07_32_02.bmp
+Accepted! dist: 11
+Trying: 09_07_30_02.bmp
+Accepted! dist: 10
+Trying: 09_07_28_02.bmp
+Accepted! dist: 9
+Trying: 00_00_34_02.bmp
+Accepted! dist: 8
+Trying: 00_01_34_02.bmp
+Accepted! dist: 7
+Trying: 00_02_34_02.bmp
+Accepted! dist: 6
+Trying: 00_02_34_01.bmp
+Accepted! dist: 7
+Trying: 00_02_32_01.bmp
+Accepted! dist: 6
+Trying: 00_03_32_01.bmp
+Accepted! dist: 5
+Trying: 00_04_32_01.bmp
+Accepted! dist: 4
+Trying: 00_04_30_01.bmp
+Accepted! dist: 3
+Trying: 00_05_30_01.bmp
+Accepted! dist: 3
+Trying: 00_06_30_01.bmp
+Accepted! dist: 3
+Trying: 01_05_20_03.bmp
+Accepted! dist: 5
+Trying: 01_06_20_03.bmp
+Accepted! dist: 6
+Trying: 01_07_20_03.bmp
+Accepted! dist: 7
+Trying: 01_07_18_03.bmp
+Accepted! dist: 6
+Trying: 01_08_18_03.bmp
+Accepted! dist: 6
+Trying: 01_07_18_03.bmp
+Accepted! dist: 6
+Trying: 01_07_20_03.bmp
+Accepted! dist: 7
+Trying: 01_07_20_02.bmp
+Accepted! dist: 6
+Trying: 01_08_20_02.bmp
+Accepted! dist: 7
+Trying: 01_07_20_02.bmp
+Accepted! dist: 6
+Trying: 02_05_26_04.bmp
+Accepted! dist: 16
+Trying: 02_05_26_03.bmp
+Accepted! dist: 15
+Trying: 02_05_28_03.bmp
+Accepted! dist: 16
+Trying: 02_05_26_03.bmp
+Accepted! dist: 15
+Trying: 02_05_26_02.bmp
+Accepted! dist: 14
+Trying: 02_06_26_02.bmp
+Accepted! dist: 14
+Trying: 02_06_24_02.bmp
+Accepted! dist: 13
+Trying: 02_07_24_02.bmp
+Accepted! dist: 13
+Trying: 02_07_22_02.bmp
+Accepted! dist: 12
+Trying: 02_07_22_01.bmp
+Accepted! dist: 11
+Trying: 03_00_04_00.bmp
+Accepted! dist: 11
+Trying: 03_01_04_00.bmp
+Accepted! dist: 10
+Trying: 03_01_06_00.bmp
+Accepted! dist: 9
+Trying: 03_02_06_00.bmp
+Accepted! dist: 8
+Trying: 03_02_08_00.bmp
+Accepted! dist: 7
+Trying: 03_02_10_00.bmp
+Accepted! dist: 6
+Trying: 03_02_10_01.bmp
+Accepted! dist: 5
+Trying: 03_03_10_01.bmp
+Accepted! dist: 4
+Trying: 03_03_12_01.bmp
+Accepted! dist: 3
+Trying: 03_04_12_01.bmp
+Accepted! dist: 4
+Trying: 04_03_08_04.bmp
+Accepted! dist: 10
+Trying: 04_03_10_04.bmp
+Accepted! dist: 9
+Trying: 04_04_10_04.bmp
+Accepted! dist: 8
+Trying: 04_05_10_04.bmp
+Accepted! dist: 9
+Trying: 04_05_12_04.bmp
+Accepted! dist: 8
+Trying: 04_06_12_04.bmp
+Accepted! dist: 9
+Trying: 04_07_12_04.bmp
+Accepted! dist: 10
+Trying: 04_08_12_04.bmp
+Accepted! dist: 11
+Trying: 04_08_14_04.bmp
+Accepted! dist: 10
+Trying: 04_08_16_04.bmp
+Accepted! dist: 9
+Trying: 05_08_02_03.bmp
+Accepted! dist: 14
+Trying: 05_07_02_03.bmp
+Accepted! dist: 13
+Trying: 05_07_02_02.bmp
+Accepted! dist: 12
+Trying: 05_08_02_02.bmp
+Accepted! dist: 13
+Trying: 05_07_02_02.bmp
+Accepted! dist: 12
+Trying: 05_08_02_02.bmp
+Accepted! dist: 13
+Trying: 05_07_02_02.bmp
+Accepted! dist: 12
+Trying: 05_08_02_02.bmp
+Accepted! dist: 13
+Trying: 05_07_02_02.bmp
+Accepted! dist: 12
+Trying: 05_07_04_02.bmp
+Accepted! dist: 11
+Trying: 06_06_12_03.bmp
+Accepted! dist: 13
+Trying: 06_07_12_03.bmp
+Accepted! dist: 14
+Trying: 06_08_12_03.bmp
+Accepted! dist: 15
+Trying: 06_08_14_03.bmp
+Accepted! dist: 14
+Trying: 06_07_14_03.bmp
+Accepted! dist: 13
+Trying: 06_08_14_03.bmp
+Accepted! dist: 14
+Trying: 06_07_14_03.bmp
+Accepted! dist: 13
+Trying: 06_08_14_03.bmp
+Accepted! dist: 14
+Trying: 06_07_14_03.bmp
+Accepted! dist: 13
+Trying: 06_07_14_02.bmp
+Accepted! dist: 12
+Trying: 07_07_04_01.bmp
+Accepted! dist: 4
+Trying: 07_06_04_01.bmp
+Accepted! dist: 3
+Trying: 07_06_06_01.bmp
+Accepted! dist: 3
+Trying: 07_05_06_01.bmp
+Accepted! dist: 4
+Trying: 07_05_08_01.bmp
+Accepted! dist: 5
+Trying: 07_04_08_01.bmp
+Accepted! dist: 6
+Trying: 07_03_08_01.bmp
+Accepted! dist: 6
+Trying: 07_02_08_01.bmp
+Accepted! dist: 7
+Trying: 07_01_08_01.bmp
+Accepted! dist: 8
+Trying: 07_01_10_01.bmp
+Accepted! dist: 9
+Trying: 08_03_14_00.bmp
+Accepted! dist: 3
+Trying: 08_03_16_00.bmp
+Accepted! dist: 2
+Trying: 08_02_16_00.bmp
+Accepted! dist: 2
+Trying: 08_01_16_00.bmp
+Accepted! dist: 3
+Trying: 08_00_16_00.bmp
+Accepted! dist: 4
+Trying: 08_01_16_00.bmp
+Accepted! dist: 3
+Trying: 08_01_16_01.bmp
+Accepted! dist: 2
+Trying: 08_02_16_01.bmp
+Accepted! dist: 1
+Trying: 08_02_18_01.bmp
+Accepted! dist: 2
+Trying: 08_03_18_01.bmp
+Accepted! dist: 2
+Trying: 09_03_32_05.bmp
+Accepted! dist: 9
+Trying: 09_04_32_05.bmp
+Accepted! dist: 4
+Trying: 09_05_32_05.bmp
+Accepted! dist: 5
+Trying: 09_05_32_04.bmp
+Accepted! dist: 4
+Trying: 09_05_34_04.bmp
+Accepted! dist: 4
+Trying: 09_06_34_04.bmp
+Accepted! dist: 5
+Trying: 09_06_34_03.bmp
+Accepted! dist: 4
+Trying: 09_07_34_03.bmp
+Accepted! dist: 5
+Trying: 09_07_32_03.bmp
+Accepted! dist: 5
+Trying: 09_08_32_03.bmp
+Accepted! dist: 6
+sumDist: 1594.0

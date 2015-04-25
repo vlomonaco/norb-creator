@@ -6,30 +6,45 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
 
-public class NorbSamplerTest {
-	//test parameter
-	static int nSeqxObj = 1; //number of sequence to be created for each object
-	static int minDist = 0; //minimum distance from the most similar frame in the training set for each object
-	static boolean [][][][][] usedFrames = new boolean[5][10][9][18][6]; //class, instance, elevation, azimuth, lighting
-	static double sumDist = 0; //average distance from training set
-	static int seed; //seed for the Test
+public class NorbSamplerTest extends NorbSampler{
+	
+	//test only parameters
+	private int minDist; //minimum distance from the most similar frame in the training set for each object
+	private boolean [][][][][] usedFrames; //class, instance, elevation, azimuth, lighting
+	private double sumDist; //average distance from training set
+	private String TrainFileName; //file from which to read
 	
 	//this info will be read in the train_conf file
-	static int nClass; //number of classes
-	static int nObjxClass; //number of objects
-	static int nSeqxObjTrain; //number of sequence for each object
-	static double[] prob = new double[4]; //probability for elevation, azimuth, lighting and to flip back
-	static int seqLen; //length of each sequence
-	static int seedTrain; //seed for random number generator
-	static Random rn;
+	private int nSeqxObjTrain; //number of sequence for each object
+	private int seedTrain; //seed for random number generator
 	
-	public static void skipLines(BufferedReader reader, int n) throws IOException{
+	public NorbSamplerTest() throws IOException{
+		this(	"test_conf.txt", //name of the test config to be created
+				"train_conf.txt", //name of the train config to be read
+				1,	//number of sequence to be created for each object
+				0, //minimum distance from the most similar frame in the training set for each object
+				new boolean[5][10][9][18][6], //class, instance, elevation, azimuth, lighting
+				2 //seed for the random generator
+				);
+	}
+	
+	public NorbSamplerTest(String fileName, String TrainFileName, int nSeqxObj, int minDist, boolean [][][][][] usedFrames, int seed) throws IOException{
+		this.fileName = fileName; //name of the test config to be created
+		this.TrainFileName = TrainFileName; //name of the test config to be created
+		this.nSeqxObj = nSeqxObj; //number of sequence to be created for each object
+		this.minDist = minDist; //minimum distance from the most similar frame in the training set for each object
+		this.usedFrames = usedFrames; //class, instance, elevation, azimuth,lighting
+		this.seed = seed;
+		writeTestConfig();
+	}
+	
+	public void skipLines(BufferedReader reader, int n) throws IOException{
 		for(int i=0; i<n; i++)
 			reader.readLine();
 	}
 	
-	public static void readTrainFile() throws IOException {
-		File r = new File("train_conf.txt");
+	public void readTrainFile() throws IOException {
+		File r = new File(TrainFileName);
 		BufferedReader reader = new BufferedReader(new FileReader(r));
 		String[] parts;
 		
@@ -46,7 +61,6 @@ public class NorbSamplerTest {
 		nSeqxObjTrain = Integer.parseInt(parts[1]);
 		
 		parts = reader.readLine().split(" ");
-
 		prob[0] = Double.parseDouble(parts[1]);
 		
 		parts = reader.readLine().split(" ");
@@ -95,65 +109,7 @@ public class NorbSamplerTest {
 		reader.close();
 	}
 	
-	public static int randInt(int min, int max) {
-	    return rn.nextInt((max - min) + 1) + min;
-	}
-	
-	public static int moveElevation(int pastElev) {
-	    double dice = rn.nextDouble();
-	    if(dice <= 0.5)
-	    	if(pastElev < 8)
-	    		return pastElev+1;
-	    	else
-	    		return pastElev-1;
-	    
-	    else
-	    	if(pastElev > 0)
-	    		return pastElev-1;
-	    	else
-	    		return pastElev+1;
-	    
-	}
-	
-	public static int moveAzimuth(int pastAzim) {
-	    double dice = rn.nextDouble();
-	    if(dice <= 0.5)
-	    	if(pastAzim < 34)
-	    		return pastAzim+2;
-	    	else
-	    		return pastAzim-2;
-	    
-	    else
-	    	if(pastAzim > 0)
-	    		return pastAzim-2;
-	    	else
-	    		return pastAzim+2;
-	    
-	}
-	
-	public static int moveLighting(int pastLight) {
-	    double dice = rn.nextDouble();
-	    if(dice <= 0.5)
-	    	if(pastLight < 5)
-	    		return pastLight+1;
-	    	else
-	    		return pastLight-1;
-	    
-	    else
-	    	if(pastLight > 0)
-	    		return pastLight-1;
-	    	else
-	    		return pastLight+1;
-	}
-	
-	public static boolean flip(int nFrame) {
-		if (nFrame == 0)
-	    	return false;
-	    else
-	    	return true;
-	}
-	
-	public static boolean usedInTrain(int clas, int obj, int elevation, int azimuth, int lighting){
+	public boolean usedInTrain(int clas, int obj, int elevation, int azimuth, int lighting){
 		System.out.println(String.format("Trying: %02d_%02d_%02d_%02d.bmp", obj,elevation, azimuth, lighting)); 
 		boolean found = false;
 		int dist=0; //not necessary, we know that something will be found
@@ -205,9 +161,8 @@ public class NorbSamplerTest {
 		}
 	}
 	
-	public static void main(String[] args) throws IOException{
-		
-		File w = new File("test_conf.txt");
+	public void writeTestConfig() throws IOException{
+		File w = new File(fileName);
 		BufferedWriter writer = new BufferedWriter(new FileWriter(w));
 		readTrainFile();
 		
@@ -240,8 +195,6 @@ public class NorbSamplerTest {
 					
 					//choosing starting point
 					int elevation, azimuth, lighting;
-					//variables used to remember the previous move
-					int exElevation=0, exAzimuth=0, exLighting=0;
 					String firstFrame;
 					do{
 						//0 to 8, which mean cameras are 30,35,40,45,50,55,60,65,70 degrees from the horizontal 
@@ -259,11 +212,13 @@ public class NorbSamplerTest {
 					//System.out.println("second round..");
 					//usedInTrain(0, 4, 8, 4);
 					
+					//rollAgain == true means that a new random extraction is needed
+					boolean rollAgain;
+					
 					//for each frame in the sequence
 					for(int j=0; j<seqLen-1; j++){
 						//choosing next move 
-						//rollAgain == true means that a new random extraction is needed
-						boolean  rollAgain = false; 
+						rollAgain = false; 
 						do{
 							double dice = rn.nextDouble();
 							//move elevation
@@ -271,41 +226,25 @@ public class NorbSamplerTest {
 								elevation = moveElevation(elevation);
 								if(usedInTrain(clas, obj, elevation, azimuth, lighting))
 									rollAgain = true;
-								else{
+								else
 									rollAgain = false;
-									exElevation = elevation;
-								}
+								
 							}
 							//move azimuth
 							else if (dice >= prob[0] && dice < prob[0]+prob[1]){
 								azimuth = moveAzimuth(azimuth);
 								if(usedInTrain(clas, obj, elevation, azimuth, lighting))
 									rollAgain = true;
-								else{
-									rollAgain = false;
-									exAzimuth = azimuth;
-								}
+								else
+									rollAgain = false;	
 							}
 							//move lighting
-							else if (dice >= prob[0]+prob[1] && dice < prob[0]+prob[1]+prob[2]){
+							else {
 								lighting = moveLighting(lighting);
 								if(usedInTrain(clas, obj, elevation, azimuth, lighting))
 									rollAgain = true;
-								else{
+								else
 									rollAgain = false;
-									exLighting = lighting;
-								}
-							}
-							//move back
-							else{
-								if(!flip(seq))
-									rollAgain = true;
-								else{
-									elevation = exElevation;
-									azimuth = exAzimuth;
-									lighting = exLighting;
-									rollAgain = false;
-								}			
 							}
 						}while(rollAgain);
 						
@@ -323,4 +262,8 @@ public class NorbSamplerTest {
 		writer.write("average distance: "+ avgDist + "\n");
 		writer.close();
 	}
+	
+    public static void main(String args[]) throws IOException{
+    	NorbSamplerTest sampler = new NorbSamplerTest();
+    }
 }

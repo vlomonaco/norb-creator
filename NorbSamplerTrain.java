@@ -31,7 +31,7 @@ public class NorbSamplerTrain extends NorbSampler {
 	}
 
 	public void writeTrainConfig() throws IOException{
-		File f = new File("train_conf.txt");
+		File f = new File(fileName);
 		BufferedWriter writer = new BufferedWriter(new FileWriter(f));
 		
 		//writing configuration parameters

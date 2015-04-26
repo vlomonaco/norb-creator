@@ -43,14 +43,19 @@ public class NorbCreator {
 	//seqExplorer
 	public boolean seqExplorer;
 	
-	public NorbCreator() throws IOException {}
+	public NorbCreator() throws IOException {
+    	convert = false;
+    	doTrain = false;
+    	doTest = false;
+    	seqExplorer = false;
+	}
 	
 	private void skipLines(BufferedReader reader, int n) throws IOException{
 		for(int i=0; i<n; i++)
 			reader.readLine();
 	}
 	
-	private void readConfigFile() throws IOException{
+	public void readConfigFile() throws IOException{
 		File r = new File(configFileName);
 		BufferedReader reader = new BufferedReader(new FileReader(r));
 		String[] parts;
@@ -184,12 +189,7 @@ public class NorbCreator {
 	}
 	
 	public static void main(String[] args) throws IOException{
-		NorbCreator creator = new NorbCreator();
-    	creator.convert = false;
-    	creator.doTrain = false;
-    	creator.doTest = false;
-    	creator.seqExplorer = false;
-    	
+		NorbCreator creator = new NorbCreator();	
 		try{
 	        if(args[0].equals("--convert")){
 	        	creator.configFileName = args[1];	

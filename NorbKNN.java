@@ -40,6 +40,8 @@ public class NorbKNN {
 		this.width = width;
 		this.height = height;
 		this.repo = ".."+File.separator+"Data"+File.separator+"all32"+File.separator+"L"+File.separator;
+		this.trainFile = trainFile;
+		this.testFile = testFile;
 		this.writeDatasetFile = writeDatasetFile; 
 	}
 	
@@ -229,7 +231,7 @@ public class NorbKNN {
 		reader_train.close();
 		reader_test.close();
 	}
-	public double createDataseAndTest() throws Exception{
+	public double createDatasetAndTest() throws Exception{
 		readTrainTestFiles();
 		//System.exit(1);
 		
@@ -276,7 +278,7 @@ public class NorbKNN {
 	
     public static void main(String args[]) throws Exception{
     	NorbKNN knn = new NorbKNN();
-    	double accuracy = knn.createDataseAndTest();
+    	double accuracy = knn.createDatasetAndTest();
     	System.out.println("Accuracy: " + accuracy + "%");
     }
 }

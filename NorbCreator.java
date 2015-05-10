@@ -132,6 +132,9 @@ public class NorbCreator {
 		parts = reader.readLine().split(" ");
 		seedTest = Integer.parseInt(parts[1]);
 		
+		parts = reader.readLine().split(" ");
+		minDistance = Integer.parseInt(parts[1]);
+		
 		reader.close();
 	}
 	

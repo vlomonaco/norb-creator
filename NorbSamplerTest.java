@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Random;
 
 public class NorbSamplerTest extends NorbSampler{
@@ -161,6 +162,11 @@ public class NorbSamplerTest extends NorbSampler{
 		}
 	}
 	
+	private void writeSeqAttempt(BufferedWriter writer, ArrayList<String> seq) throws IOException {
+		for(int i=0; i<seq.size(); i++)
+			writer.write(seq.get(i));
+	}
+	
 	public void writeTestConfig() throws IOException{
 		File w = new File(fileName);
 		BufferedWriter writer = new BufferedWriter(new FileWriter(w));
@@ -189,12 +195,18 @@ public class NorbSamplerTest extends NorbSampler{
 				
 				//for each sequence
 				for(int seq=0; seq<nSeqxObj; seq++){
-					writer.write("\n---------------\n");
-					writer.write("Class:    "+clas+"\nObject:   "+ obj + "\nSequence: " + seq + "\n");
-					writer.write("---------------\n");
+					//support array for temporary seq
+					ArrayList<String> seqAttempt = new ArrayList<String>();
+					//if we reach 100 attempts we choose another starting point
+					int numAttempts = 0;
+					
+					seqAttempt.add("\n---------------\n");
+					seqAttempt.add("Class:    "+clas+"\nObject:   "+ obj + "\nSequence: " + seq + "\n");
+					seqAttempt.add("---------------\n");
 					
 					//choosing starting point
 					int elevation, azimuth, lighting;
+					int exElevation, exAzimuth, exLighting;
 					String firstFrame;
 					do{
 						//0 to 8, which mean cameras are 30,35,40,45,50,55,60,65,70 degrees from the horizontal 
@@ -206,7 +218,7 @@ public class NorbSamplerTest extends NorbSampler{
 						firstFrame = String.format("%02d_%02d_%02d_%02d.bmp", obj,elevation, azimuth, lighting); 
 						//System.out.println("trying: "+firstFrame+" matrix: "+usedFrames[obj][elevation][azimuth/2][lighting]);
 					}while(usedInTrain(clas ,obj, elevation, azimuth, lighting));
-					writer.write(firstFrame + "\n");
+					seqAttempt.add(firstFrame + "\n");
 					
 					//testing
 					//System.out.println("second round..");
@@ -218,40 +230,69 @@ public class NorbSamplerTest extends NorbSampler{
 					//for each frame in the sequence
 					for(int j=0; j<seqLen-1; j++){
 						//choosing next move 
-						rollAgain = false; 
 						do{
 							double dice = rn.nextDouble();
 							//move elevation
 							if(dice >= 0 && dice < prob[0]){
+								exElevation = elevation;
 								elevation = moveElevation(elevation);
-								if(usedInTrain(clas, obj, elevation, azimuth, lighting))
+								if(usedInTrain(clas, obj, elevation, azimuth, lighting)){
 									rollAgain = true;
-								else
+									elevation = exElevation;
+									numAttempts++;
+								}	
+								else{
 									rollAgain = false;
+									numAttempts = 0;
+								}
 								
 							}
 							//move azimuth
 							else if (dice >= prob[0] && dice < prob[0]+prob[1]){
+								exAzimuth = azimuth;
 								azimuth = moveAzimuth(azimuth);
-								if(usedInTrain(clas, obj, elevation, azimuth, lighting))
+								if(usedInTrain(clas, obj, elevation, azimuth, lighting)){
 									rollAgain = true;
-								else
-									rollAgain = false;	
+									azimuth = exAzimuth;
+									numAttempts++;
+								}
+								else{
+									rollAgain = false;
+									numAttempts = 0;
+								}
+								
 							}
 							//move lighting
 							else {
+								exLighting = lighting;
 								lighting = moveLighting(lighting);
-								if(usedInTrain(clas, obj, elevation, azimuth, lighting))
+								if(usedInTrain(clas, obj, elevation, azimuth, lighting)){
 									rollAgain = true;
-								else
+									lighting = exLighting;
+									numAttempts++;
+								}
+								else{
 									rollAgain = false;
+									numAttempts = 0;
+								}
 							}
-						}while(rollAgain);
+							//System.out.println(String.format("%02d_%02d_%02d_%02d.bmp", obj, elevation, azimuth, lighting));
+							//writer.close(); System.exit(0);
+						}while(rollAgain && numAttempts != 100);
 						
+						if(numAttempts == 100)
+							break;
+
 						//writing frame
 						String frame = String.format("%02d_%02d_%02d_%02d.bmp", obj, elevation, azimuth, lighting); 
-						writer.write(frame + "\n");
+						seqAttempt.add(frame + "\n");
 					}
+					if(numAttempts == 100){
+						System.out.println("Warning: max num attempts reached!");
+						seq--; //we restart to build the same sequence.
+						continue;
+					}
+					writeSeqAttempt(writer, seqAttempt);
 				}
 			}
 		}
@@ -261,6 +302,7 @@ public class NorbSamplerTest extends NorbSampler{
 		writer.write("---------------\n");
 		writer.write("average distance: "+ avgDist + "\n");
 		writer.close();
+		
 	}
 	
     public static void main(String args[]) throws IOException{

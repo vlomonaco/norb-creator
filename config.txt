@@ -17,13 +17,13 @@ scaleFactor: 3
 #     COMMON PARAMS     #
 #########################
 imagesRepo: /home/vincenzo/MEGA/Università/Magistrale/Tirocinio/smallNORB/Data/all32/L
-nClass: 2
-nObjxClass: 10
+nClass: 1
+nObjxClass: 1
 elevationProb: 0.55
 azimuthProb: 0.35
 lightingProb: 0.1
-flipProb: 0
-seqLen: 40
+flipProb: 0.0
+seqLen: 100
 #########################
 
 #########################
@@ -40,7 +40,7 @@ seed: 1
 fileName: test_conf.txt
 nSeqxObj: 1
 seed: 2
-minDistance: 0
+minDistance: 2
 #########################
 
 #########################

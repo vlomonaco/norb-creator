@@ -2,8 +2,6 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Random;
-
 
 public class NorbCreator {
 	
@@ -134,7 +132,7 @@ public class NorbCreator {
 		
 		parts = reader.readLine().split(" ");
 		minDistance = Integer.parseInt(parts[1]);
-		
+		System.out.println("seed train: "+seedTrain+" seed test: "+ seedTest);
 		reader.close();
 	}
 	

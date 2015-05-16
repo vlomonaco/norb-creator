@@ -32,6 +32,10 @@ public abstract class NorbSampler{
 		initializeDirection();
 	}
 	
+	public void setSeed(int seed){
+		rn = new Random(seed);
+	}
+	
 	public int randInt(int min, int max) {
 	    return rn.nextInt((max - min) + 1) + min;
 	}

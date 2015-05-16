@@ -4,16 +4,15 @@ import java.io.FileWriter;
 import java.util.Date;
 import java.util.Random;
 
-
-public class KNNTestSeries {
+public class KNNTestSeries { 
 	
 	public static void main(String[] args) throws Exception {
 		//number of test with different ninDistance
-		int numTestsDist = 1;
+		int numTestsDist = 3;
 		//number of test with different seqLen
-		int numTestsLen = 5;
+		int numTestsLen = 3;
 		//number of test to be averaged
-		int numTestsAvg = 30;
+		int numTestsAvg = 5;
 		//where to save and load different conf files
 		String repo = "../KNNTests/";
 		//random generator
@@ -33,18 +32,20 @@ public class KNNTestSeries {
 		long startTime = System.nanoTime(); //timing
 		
 		for(int i=0; i<numTestsDist; i++){
-			creator.minDistance = (i+1)*2;
+			int minDist = (i+1);
+			creator.minDistance = minDist;
 			for(int j=0; j<numTestsLen; j++){
-				creator.seqLen = (j+1)*20;
+				int seqLen = (j+1)*15;
+				creator.seqLen = seqLen;
 				double sumAccuracy = 0;
 				for(int k=0; k<numTestsAvg; k++){
 					creator.seedTrain = rn.nextInt();
 					creator.seedTest = rn.nextInt();
-					creator.trainFileName = repo + "train_config_"+Integer.toString((i+1)*2)+"_"+Integer.toString((j+1)*20)+"_"+k+".txt";
-					creator.testFileName = repo + "test_config_"+Integer.toString((i+1)*2)+"_"+Integer.toString((j+1)*20)+"_"+k+".txt";
+					creator.trainFileName = repo + "train_config_"+minDist+"_"+seqLen+"_"+k+".txt";
+					creator.testFileName = repo + "test_config_"+minDist+"_"+seqLen+"_"+k+".txt";
 					creator.createObjects();
-					NorbKNN knn = new NorbKNN(32, 32,".."+File.separator+"Data"+File.separator+"all32"+File.separator+"L"+File.separator,
-											  creator.trainFileName, creator.testFileName, false);
+					NorbKNN knn = new NorbKNN(32, 32,"/home/vincenzo/all32/L/",
+											  creator.trainFileName, creator.testFileName, false, false /*cumulative Confidence*/);
 		
 					accuracy[k] = knn.createDatasetAndTest();
 					System.out.println("Accuracy: " + accuracy[k] + "%");
@@ -57,7 +58,7 @@ public class KNNTestSeries {
 				}
 				double variance = (sumVariance/numTestsAvg);
 					
-				writer.write("Avg("+numTestsAvg+" runs) accuracy with minDist "+(i+1)*2+" and seqLen "+(j+1)*20+": " +(sumAccuracy/numTestsAvg)+"% with variance "+ Math.sqrt(variance)+"\n");
+				writer.write("Avg("+numTestsAvg+" runs) accuracy with minDist "+minDist+" and seqLen "+seqLen+": " +(sumAccuracy/numTestsAvg)+"% with devStd "+ Math.sqrt(variance)+"\n");
 				writer.flush();
 			}
 		}

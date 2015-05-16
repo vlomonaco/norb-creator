@@ -9,13 +9,27 @@ import weka.core.Instance;
 
 
 public class SeqVerifier {
+	String trainFile;
+	String testFile;
 	
-	private static void skipLines(BufferedReader reader, int n) throws IOException{
+	public SeqVerifier(String trainFile, String testFile){
+		this.trainFile = trainFile;
+		this.testFile = testFile;
+	}
+	
+	public SeqVerifier() throws IOException{
+		this(
+				"train_conf.txt",
+				"test_conf.txt"
+			);
+	}
+	
+	private void skipLines(BufferedReader reader, int n) throws IOException{
 		for(int i=0; i<n; i++)
 			reader.readLine();
 	}
 	
-	public static boolean verifySequentiality(String seq[]) {
+	public boolean verifySequentiality(String seq[]) {
 		String[] parts;
 		int prevStep[] = new int[4];
 		for(int i=0; i<seq.length;i++){
@@ -53,7 +67,7 @@ public class SeqVerifier {
 		return true;
 	}
 	
-	private static int computeDistance(String img1, String img2){
+	private int computeDistance(String img1, String img2){
 		String parts[], line;
 		int img1Val[] = new int[4];
 		int img2Val[] = new int[4];
@@ -81,12 +95,12 @@ public class SeqVerifier {
 		return dist;
 	}
 	
-	public static boolean verifyDistance(String train[], String test[], int minDist){
+	public boolean verifyDistance(String train[], String test[], int minDist){
 		for(int i=0; i<test.length; i++){
 			for(int j=0; j<train.length; j++){
 				int dist = computeDistance(test[i], train[j]);
 				if(dist < minDist){
-					System.out.println("[DISTANCE ERROR] at images: " + test[i] + ", "+ train[j]+ " with dist: "+ dist);
+					System.out.println("[DISTANCE ERROR] at images: " + train[j] + ", "+ test[i]+ " with dist: "+ dist);
 					return false;
 				}
 			}
@@ -94,9 +108,7 @@ public class SeqVerifier {
 		return true;
 	}
 
-	public static void main(String[] args) throws IOException {
-		String trainFile = "train_conf.txt";
-		String testFile = "test_conf.txt";
+	public boolean verifyAll() throws IOException{
 		File train = new File(trainFile);
 		File test = new File(testFile);
 		BufferedReader reader_train = new BufferedReader(new FileReader(train));
@@ -161,27 +173,6 @@ public class SeqVerifier {
 						testSeq[clas][obj][seq][i]  = reader_test.readLine();
 				}	
 		
-/*		String seq1[] = new String[4];
-		String seq2[] = new String[4];
-		seq1[0] = "00_01_30_00.bmp";
-		seq1[1] = "00_01_30_01.bmp";
-		seq1[2] = "00_01_30_02.bmp";
-		seq1[3] = "00_02_30_02.bmp";
-		
-		seq2[0] = "00_05_20_04.bmp";
-		seq2[1] = "00_05_18_04.bmp";
-		seq2[2] = "00_06_18_04.bmp";
-		seq2[3] = "00_07_18_04.bmp";*/
-		
-		
-//		System.out.println("first train seq:");
-//		for(int i=0; i< trainSeq[0][0][0].length; i++)
-//			System.out.println(trainSeq[0][0][0][i]);
-//		
-//		System.out.println("\nfirst test seq:");
-//		for(int i=0; i< testSeq[0][0][0].length; i++)
-//			System.out.println(testSeq[0][0][0][i]);
-		
 		System.out.println("Starting verification procedures...");
 		boolean ok = true;
 		int numTests = 0;
@@ -216,9 +207,19 @@ public class SeqVerifier {
 				System.out.print("\r" + numTests + " tests done.");
 			}
 	
-		if(ok) 
+		if(ok){
 			System.out.println("\nTests completed. Everything seems ok.");
-					
+			return true;
+		}
+		else{
+			System.out.println("\nError found!");
+			return false;
+		}
+		
+	}
+	public static void main(String[] args) throws IOException {
+		SeqVerifier ver = new SeqVerifier();
+		ver.verifyAll();
 	}
 
 }

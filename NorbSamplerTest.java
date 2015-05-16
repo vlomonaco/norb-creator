@@ -30,12 +30,20 @@ public class NorbSamplerTest extends NorbSampler{
 	}
 	
 	public NorbSamplerTest(String fileName, String TrainFileName, int nSeqxObj, int minDist, boolean [][][][][] usedFrames, int seed) throws IOException{
-		this.fileName = fileName; //name of the test config to be created
+		super(	//zero elements will be updated later reading the training file
+				fileName, //name of the train config file
+				0,	//number of classes
+				0, //number of objects per class
+				nSeqxObj,	//number of sequence for each object
+				new double[4],	//probability for elevation, azimuth, lighting and to flip back
+				0, //length of each sequence
+				0);	//seed for random generator
+		
 		this.TrainFileName = TrainFileName; //name of the test config to be created
 		this.nSeqxObj = nSeqxObj; //number of sequence to be created for each object
 		this.minDist = minDist; //minimum distance from the most similar frame in the training set for each object
 		this.usedFrames = usedFrames; //class, instance, elevation, azimuth,lighting
-		this.seed = seed;
+
 		writeTestConfig();
 	}
 	
@@ -79,7 +87,7 @@ public class NorbSamplerTest extends NorbSampler{
 		parts = reader.readLine().split(" ");
 		seedTrain = Integer.parseInt(parts[1]);
 		seed = seedTrain+1;
-		rn = new Random(seed);
+		setSeed(seed);
 		
 		//discard dash line
 		reader.readLine();
@@ -113,30 +121,29 @@ public class NorbSamplerTest extends NorbSampler{
 	public boolean usedInTrain(int clas, int obj, int elevation, int azimuth, int lighting){
 		System.out.println(String.format("Trying: %02d_%02d_%02d_%02d.bmp", obj,elevation, azimuth, lighting)); 
 		boolean found = false;
-		int dist=0; //not necessary, we know that something will be found
-		for(int d=0; !found; d++ ){
-			for(int i=elevation-d; i<elevation+d; i++ ){
+		int dist=0; 
+		for(int d=0; !found || dist>d; d++ ){
+			//System.out.println("d: "+ d);
+			for(int i=elevation-d; i<=elevation+d; i++ ){
 				if(i<0)
 					i=0;
 				if(i>8)
 					break;
-				//System.out.println("cosa succede: "+ obj +" "+ i);
-				for(int j=azimuth/2-d; j<azimuth/2+d; j++)
-				{
+				//System.out.println("cosa succede: "+ i);
+				for(int j=azimuth/2-d; j<=azimuth/2+d; j++){
 					if(j<0)
 						j=0;
 					if(j>17)
 						break;
-					for(int k=lighting-d; k<lighting+d; k++ ){
+					for(int k=lighting-d; k<=lighting+d; k++ ){
 						if(k<0)
 							k=0;
 						if(k>5)
 							break;
-						//if(j==5)
-						//	System.out.println("ei: "+ obj +" "+ i +" "+ j +" "+ k);
+						//System.out.println("index: "+ obj +" "+ i +" "+ j +" "+ k);
 						if(usedFrames[clas][obj][i][j][k]){
-							//System.out.println("ok...");
 							int ris = Math.abs(i-elevation) + Math.abs(j-azimuth/2) + Math.abs(k-lighting);
+							//System.out.println("hei...used-->"+obj+" "+ i+" "+j+" "+k+"--->"+ris);
 							if(found){
 								if(dist > ris)
 									dist = ris;
@@ -151,6 +158,13 @@ public class NorbSamplerTest extends NorbSampler{
 				}
 			}
 		}
+//		String img = String.format("%02d_%02d_%02d_%02d.bmp", obj,elevation, azimuth, lighting);
+//		if(img.equals("00_01_34_03.bmp")){
+//			System.out.println("trovato");
+//			System.out.println(usedFrames[0][0][3][17][3]);
+//		}
+			
+		
 		if(dist >= minDist){
 			sumDist += dist;
 			System.out.println("Accepted! dist: "+ dist);
@@ -302,6 +316,13 @@ public class NorbSamplerTest extends NorbSampler{
 		writer.write("---------------\n");
 		writer.write("average distance: "+ avgDist + "\n");
 		writer.close();
+		
+		SeqVerifier ver = new SeqVerifier(TrainFileName, fileName);
+		if(!ver.verifyAll())
+		{
+			System.out.println("ERROR IN THE SEQUENCE!");
+			System.exit(-1);
+		}
 		
 	}
 	

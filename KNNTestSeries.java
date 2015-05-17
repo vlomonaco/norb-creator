@@ -45,7 +45,7 @@ public class KNNTestSeries {
 					creator.testFileName = repo + "test_config_"+minDist+"_"+seqLen+"_"+k+".txt";
 					creator.createObjects();
 					NorbKNN knn = new NorbKNN(32, 32,"/home/vincenzo/all32/L/",
-											  creator.trainFileName, creator.testFileName, false, false /*cumulative Confidence*/);
+											  creator.trainFileName, creator.testFileName, false, true /*cumulative Confidence*/);
 		
 					accuracy[k] = knn.createDatasetAndTest();
 					System.out.println("Accuracy: " + accuracy[k] + "%");

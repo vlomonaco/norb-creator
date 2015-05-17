@@ -59,7 +59,7 @@
 \normalfont \normalsize 
 \textsc{alma mater studiorum - università di bologna} \\ [25pt] % Your university, school and/or department name(s)
 \horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
-\huge Documentazione smallNorbCreator v.0.3 \\ % The assignment title
+\huge Documentazione smallNorbCreator v.0.4 \\ % The assignment title
 \horrule{0.5pt} \\[0.5cm] % Thick bottom horizontal rule
 }
 
@@ -78,7 +78,7 @@
 \section{Introduzione}
 
 Il progetto \emph{smallNorbCreator} ha come obiettivo la creazione di un meta-database di sequenze di immagini a partire dal database \emph{``small NORB v.1.0''} orginale.
-Ad oggi è composto da 7 sorgenti java ed un jar eseguibile:
+Ad oggi è composto da 9 sorgenti java ed un jar eseguibile:
 
 \begin{enumerate}
 	\item NorbConverter.java
@@ -87,6 +87,8 @@ Ad oggi è composto da 7 sorgenti java ed un jar eseguibile:
 	\item NorbSamplerTest.java 
 	\item NorbSeqExplorer.java
 	\item NorbKNN.java 
+	\item KNNTestSeries.java 
+	\item SeqVerifier.java
 	\item NorbCreator.java
 	\item norbCreator.jar
 \end{enumerate}
@@ -241,7 +243,13 @@ Sequence: 0
 \end{figure}
 
 \section{NorbKNN.java}
-\emph{NorbConverter.java} è una prima bozza di classificatore di base KNN. Esso utilizza la libreria \emph{weka} e per ogni sequenza crea un unico vettore di feature che giustappone le intensità dei pixel per ciascuna immagine.
+\emph{NorbKNN.java} è la classe di base che implementa un classificatore di sequenze mediante l'algoritmo KNN. In particolare si utilizza l'implementazione offerta dalla libreria \emph{weka}. Per classificare un singolo frame della sequenza di test è inoltre possibile scegliere se fondondere o no i livelli di confidenza rispetto ai frame precedentemente classificati. 
+
+\section{KNNTestSeries.java}
+\emph{KNNTestSeries.java} è una classe per il testing automatico dell'accuratezza al variare di numerosi parametri come la lunghezza delle sequenze o la distanza del test-set dal training-set.
+
+\section{SeqVerifier.java}
+\emph{SeqVerifier.java} è una classe per la verifica automatica delle sequenze generate. In particolare si preoccupa di verificare se le sequenze sono effettivamente sequenziali e se le distanze dal training set sono veritiere. Per ogni sequenza generata, la verifica è effettuata automaticamente, quindi è impossibile produrre sperimentazioni su sequenze malformate.
 
 \section{NorbCreator.java}
 \emph{NorbCreator.java} si preoccupa di offrire un' interfaccia testuale per l'automatizazzione di tutte le funzionalità offerte.

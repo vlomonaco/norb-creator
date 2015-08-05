@@ -11,8 +11,8 @@ public class JitterImages {
 	
 	static int width = 32;
 	static int height = 32;
-	static String source = "/home/vincenzo/MEGA/Università/Magistrale/Thesis/Jitter/esempio Java/";
-	static String dest = "/home/vincenzo/MEGA/Università/Magistrale/Thesis/Jitter/dest/";
+	static String source = "../data/sampled_norb/train100/32/L/";
+	static String dest = "../data/sampled_norb/x32_100_only_jittered/L/";
 	
 	public static byte getBackground(byte[] data){
     	int currentBackground = Integer.MAX_VALUE;
@@ -121,10 +121,10 @@ public class JitterImages {
 															N.substring(0, N.length()-4) + "j" + direction + ".bmp"));	
 				}
 				
-				//write the original image too
+				/*write the original image too
 				BufferedImage image2w = new BufferedImage(width, height,BufferedImage.TYPE_BYTE_GRAY);
-				image2w.getRaster().setDataElements(0, 0, width, height, out_img);
-				ImageIO.write(image2w, "BMP", new File(dest + "/" + clas +"/" + file.getName()));
+				image2w.getRaster().setDataElements(0, 0, width, height, in_img);
+				ImageIO.write(image2w, "BMP", new File(dest + "/" + clas +"/" + file.getName()));*/
 				
 				System.out.println("Img '"+file.getName()+"' jittered...");
 				

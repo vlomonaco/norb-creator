@@ -23,7 +23,7 @@ elevationProb: 0.55
 azimuthProb: 0.35
 lightingProb: 0.1
 flipProb: 0.00
-seqLen: 100
+seqLen: 2
 #########################
 
 #########################

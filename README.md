@@ -86,8 +86,9 @@ This software is highly experimental and comes with no warranties. It has been s
 
 ### Copyright ###
 
-NorbCreator: an easy way to sequentialize the NORB dataset.
-Copyright (C) {2015}  {Vincenzo Lomonaco, Davide Maltoni}
+NorbCreator: _an easy way to sequentialize the NORB dataset_.
+
+Copyright (C) 2015 _Vincenzo Lomonaco_, _Davide Maltoni_
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

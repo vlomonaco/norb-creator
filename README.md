@@ -7,7 +7,7 @@ It can also be easily expanded to manage any other image dataset.
 **Please, cite the paper above if you want to use this tool.**
 
 ### Getting started ###
-The easiest way to use the tool is to [download](https://bitbucket.org/vincenzo_lomonaco/norbcreator/src/d4a99663fbfa?at=master) the jar package and run it as follows:
+The easiest way to use the tool is to [download](https://bitbucket.org/vincenzo_lomonaco/norbcreator/src) the jar package and run it as follows:
 
 ```
 java -jar norbCreator.jar configFileName

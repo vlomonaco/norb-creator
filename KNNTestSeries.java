@@ -44,7 +44,7 @@ public class KNNTestSeries {
 					creator.trainFileName = repo + "train_config_"+minDist+"_"+seqLen+"_"+k+".txt";
 					creator.testFileName = repo + "test_config_"+minDist+"_"+seqLen+"_"+k+".txt";
 					creator.createObjects();
-					NorbKNN knn = new NorbKNN(32, 32,"/home/vincenzo/all32/L/",
+					NorbKNN knn = new NorbKNN(32, 32,"all32/L/",
 											  creator.trainFileName, creator.testFileName, false, true /*cumulative Confidence*/);
 		
 					accuracy[k] = knn.createDatasetAndTest();

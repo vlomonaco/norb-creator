@@ -43,16 +43,16 @@ public class CreateDataset {
 	
 	public CreateDataset() throws IOException{
 		this(
-			"/home/vincenzo/MEGA/Università/Magistrale/Thesis/mytest/TheanoTests/train_conf.txt", //name of the test config 
+			"train_conf.txt", //name of the test config 
 			2,
-			"/home/vincenzo/MEGA/Università/Magistrale/Thesis/mytest/TheanoTests/test_conf_1.txt", //name of the train config 
+			"test_conf_1.txt", //name of the train config 
 			10,
-			"/home/vincenzo/MEGA/Università/Magistrale/Thesis/mytest/TheanoTests/test_conf_1.txt",
+			"test_conf_1.txt",
 			5,
-			"/home/vincenzo/MEGA/Università/Magistrale/Thesis/prova/train/L",
-			"/home/vincenzo/MEGA/Università/Magistrale/Thesis/prova/test/L",
-			"/home/vincenzo/MEGA/Università/Magistrale/Thesis/prova/valid/L",
-			"/home/vincenzo/all32/L"
+			"train/L",
+			"test/L",
+			"valid/L",
+			"all32/L"
 			);
 	}
 	

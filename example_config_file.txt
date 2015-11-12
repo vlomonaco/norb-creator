@@ -1,0 +1,49 @@
+#########################
+#      CONFIG FILE      #
+#########################
+
+#########################
+#   CONVERSION PARAMS   #
+#########################
+matlabFile: ../Data/Matlab/smallnorb-5x46789x9x18x6x2x96x96-training-
+destDir: ../Data/all32
+convert(yes/no): no
+inputWidth: 96
+inputHeight: 96
+scaleFactor: 3
+#########################
+
+#########################
+#     COMMON PARAMS     #
+#########################
+imagesRepo: ../Data/all32/L
+nClass: 5
+nObjxClass: 10
+elevationProb: 0.55
+azimuthProb: 0.35
+lightingProb: 0.1
+flipProb: 0.00
+seqLen: 2
+#########################
+
+#########################
+#     TRAIN PARAMS      #
+#########################
+fileName: train_conf.txt
+nSeqxObj: 1
+seed: 1
+#########################
+
+#########################
+#      TEST PARAMS      #
+#########################
+fileName: test_conf.txt
+nSeqxObj: 1
+seed: 2
+minDistance: 1
+#########################
+
+#########################
+#      END CONFIG       #
+#########################
+

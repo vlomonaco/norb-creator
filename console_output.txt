@@ -1,407 +1,0 @@
-seed train: 1 seed test: 2
-00_05_20_04
-Class: 0, Used: 0 5 20 4
-00_05_18_04
-Class: 0, Used: 0 5 18 4
-01_00_00_04
-Class: 0, Used: 1 0 0 4
-01_00_00_03
-Class: 0, Used: 1 0 0 3
-02_02_16_04
-Class: 0, Used: 2 2 16 4
-02_03_16_04
-Class: 0, Used: 2 3 16 4
-03_08_06_02
-Class: 0, Used: 3 8 6 2
-03_08_04_02
-Class: 0, Used: 3 8 4 2
-04_05_30_03
-Class: 0, Used: 4 5 30 3
-04_05_28_03
-Class: 0, Used: 4 5 28 3
-05_05_14_03
-Class: 0, Used: 5 5 14 3
-05_06_14_03
-Class: 0, Used: 5 6 14 3
-06_01_10_04
-Class: 0, Used: 6 1 10 4
-06_02_10_04
-Class: 0, Used: 6 2 10 4
-07_01_04_01
-Class: 0, Used: 7 1 4 1
-07_02_04_01
-Class: 0, Used: 7 2 4 1
-08_07_30_04
-Class: 0, Used: 8 7 30 4
-08_07_28_04
-Class: 0, Used: 8 7 28 4
-09_02_02_04
-Class: 0, Used: 9 2 2 4
-09_02_02_03
-Class: 0, Used: 9 2 2 3
-00_06_26_03
-Class: 1, Used: 0 6 26 3
-00_07_26_03
-Class: 1, Used: 0 7 26 3
-01_03_06_05
-Class: 1, Used: 1 3 6 5
-01_04_06_05
-Class: 1, Used: 1 4 6 5
-02_00_12_02
-Class: 1, Used: 2 0 12 2
-02_00_12_01
-Class: 1, Used: 2 0 12 1
-03_01_16_00
-Class: 1, Used: 3 1 16 0
-03_02_16_00
-Class: 1, Used: 3 2 16 0
-04_03_12_00
-Class: 1, Used: 4 3 12 0
-04_04_12_00
-Class: 1, Used: 4 4 12 0
-05_01_22_05
-Class: 1, Used: 5 1 22 5
-05_01_22_04
-Class: 1, Used: 5 1 22 4
-06_07_14_04
-Class: 1, Used: 6 7 14 4
-06_08_14_04
-Class: 1, Used: 6 8 14 4
-07_04_18_01
-Class: 1, Used: 7 4 18 1
-07_05_18_01
-Class: 1, Used: 7 5 18 1
-08_02_14_03
-Class: 1, Used: 8 2 14 3
-08_03_14_03
-Class: 1, Used: 8 3 14 3
-09_01_08_02
-Class: 1, Used: 9 1 8 2
-09_02_08_02
-Class: 1, Used: 9 2 8 2
-00_04_02_04
-Class: 2, Used: 0 4 2 4
-00_04_00_04
-Class: 2, Used: 0 4 0 4
-01_02_06_03
-Class: 2, Used: 1 2 6 3
-01_03_06_03
-Class: 2, Used: 1 3 6 3
-02_05_08_03
-Class: 2, Used: 2 5 8 3
-02_06_08_03
-Class: 2, Used: 2 6 8 3
-03_03_16_05
-Class: 2, Used: 3 3 16 5
-03_03_14_05
-Class: 2, Used: 3 3 14 5
-04_00_04_04
-Class: 2, Used: 4 0 4 4
-04_00_02_04
-Class: 2, Used: 4 0 2 4
-05_02_34_00
-Class: 2, Used: 5 2 34 0
-05_02_32_00
-Class: 2, Used: 5 2 32 0
-06_06_30_01
-Class: 2, Used: 6 6 30 1
-06_06_28_01
-Class: 2, Used: 6 6 28 1
-07_06_14_05
-Class: 2, Used: 7 6 14 5
-07_07_14_05
-Class: 2, Used: 7 7 14 5
-08_00_24_04
-Class: 2, Used: 8 0 24 4
-08_01_24_04
-Class: 2, Used: 8 1 24 4
-09_02_20_03
-Class: 2, Used: 9 2 20 3
-09_03_20_03
-Class: 2, Used: 9 3 20 3
-00_08_34_04
-Class: 3, Used: 0 8 34 4
-00_08_32_04
-Class: 3, Used: 0 8 32 4
-01_02_20_00
-Class: 3, Used: 1 2 20 0
-01_02_18_00
-Class: 3, Used: 1 2 18 0
-02_04_22_04
-Class: 3, Used: 2 4 22 4
-02_05_22_04
-Class: 3, Used: 2 5 22 4
-03_01_24_00
-Class: 3, Used: 3 1 24 0
-03_02_24_00
-Class: 3, Used: 3 2 24 0
-04_01_04_02
-Class: 3, Used: 4 1 4 2
-04_01_02_02
-Class: 3, Used: 4 1 2 2
-05_04_22_04
-Class: 3, Used: 5 4 22 4
-05_05_22_04
-Class: 3, Used: 5 5 22 4
-06_05_34_03
-Class: 3, Used: 6 5 34 3
-06_05_32_03
-Class: 3, Used: 6 5 32 3
-07_01_28_03
-Class: 3, Used: 7 1 28 3
-07_02_28_03
-Class: 3, Used: 7 2 28 3
-08_02_06_01
-Class: 3, Used: 8 2 6 1
-08_03_06_01
-Class: 3, Used: 8 3 6 1
-09_00_12_01
-Class: 3, Used: 9 0 12 1
-09_00_12_00
-Class: 3, Used: 9 0 12 0
-00_05_22_00
-Class: 4, Used: 0 5 22 0
-00_06_22_00
-Class: 4, Used: 0 6 22 0
-01_01_04_03
-Class: 4, Used: 1 1 4 3
-01_01_02_03
-Class: 4, Used: 1 1 2 3
-02_05_32_05
-Class: 4, Used: 2 5 32 5
-02_06_32_05
-Class: 4, Used: 2 6 32 5
-03_05_04_03
-Class: 4, Used: 3 5 4 3
-03_05_02_03
-Class: 4, Used: 3 5 2 3
-04_00_08_00
-Class: 4, Used: 4 0 8 0
-04_01_08_00
-Class: 4, Used: 4 1 8 0
-05_00_32_05
-Class: 4, Used: 5 0 32 5
-05_01_32_05
-Class: 4, Used: 5 1 32 5
-06_06_14_00
-Class: 4, Used: 6 6 14 0
-06_07_14_00
-Class: 4, Used: 6 7 14 0
-07_08_00_04
-Class: 4, Used: 7 8 0 4
-07_07_00_04
-Class: 4, Used: 7 7 0 4
-08_08_32_02
-Class: 4, Used: 8 8 32 2
-08_07_32_02
-Class: 4, Used: 8 7 32 2
-09_06_18_05
-Class: 4, Used: 9 6 18 5
-09_05_18_05
-Class: 4, Used: 9 5 18 5
-Trying: 00_04_12_02.bmp
-Accepted! dist: 6
-Trying: 00_05_12_02.bmp
-Accepted! dist: 5
-Trying: 01_00_14_00.bmp
-Accepted! dist: 10
-Trying: 01_00_14_01.bmp
-Accepted! dist: 9
-Trying: 02_05_16_01.bmp
-Accepted! dist: 5
-Trying: 02_06_16_01.bmp
-Accepted! dist: 6
-Trying: 03_03_34_04.bmp
-Accepted! dist: 21
-Trying: 03_03_32_04.bmp
-Accepted! dist: 20
-Trying: 04_00_08_01.bmp
-Accepted! dist: 17
-Trying: 04_01_08_01.bmp
-Accepted! dist: 16
-Trying: 05_05_18_01.bmp
-Accepted! dist: 4
-Trying: 05_06_18_01.bmp
-Accepted! dist: 4
-Trying: 06_02_14_00.bmp
-Accepted! dist: 6
-Trying: 06_03_14_00.bmp
-Accepted! dist: 7
-Trying: 07_02_34_04.bmp
-Accepted! dist: 18
-Trying: 07_02_32_04.bmp
-Accepted! dist: 17
-Trying: 08_03_08_02.bmp
-Accepted! dist: 16
-Trying: 08_04_08_02.bmp
-Accepted! dist: 15
-Trying: 09_03_04_02.bmp
-Accepted! dist: 3
-Trying: 09_04_04_02.bmp
-Accepted! dist: 4
-Trying: 00_07_04_03.bmp
-Accepted! dist: 11
-Trying: 00_07_02_03.bmp
-Accepted! dist: 12
-Trying: 01_00_30_01.bmp
-Accepted! dist: 19
-Trying: 01_01_30_01.bmp
-Accepted! dist: 18
-Trying: 02_04_30_04.bmp
-Accepted! dist: 15
-Trying: 02_05_30_04.bmp
-Accepted! dist: 16
-Trying: 03_01_30_05.bmp
-Accepted! dist: 12
-Trying: 03_01_28_05.bmp
-Accepted! dist: 11
-Trying: 04_01_28_03.bmp
-Accepted! dist: 13
-Trying: 04_02_28_03.bmp
-Accepted! dist: 12
-Trying: 05_06_20_01.bmp
-Accepted! dist: 9
-Trying: 05_07_20_01.bmp
-Accepted! dist: 10
-Trying: 06_07_00_00.bmp
-Accepted! dist: 11
-Trying: 06_08_00_00.bmp
-Accepted! dist: 11
-Trying: 07_04_16_03.bmp
-Accepted! dist: 3
-Trying: 07_04_14_03.bmp
-Accepted! dist: 4
-Trying: 08_02_26_01.bmp
-Accepted! dist: 8
-Trying: 08_03_26_01.bmp
-Accepted! dist: 8
-Trying: 09_04_22_02.bmp
-Accepted! dist: 9
-Trying: 09_04_20_02.bmp
-Accepted! dist: 8
-Trying: 00_07_08_04.bmp
-Accepted! dist: 6
-Trying: 00_08_08_04.bmp
-Accepted! dist: 7
-Trying: 01_06_14_04.bmp
-Accepted! dist: 8
-Trying: 01_06_14_05.bmp
-Accepted! dist: 9
-Trying: 02_07_22_02.bmp
-Accepted! dist: 9
-Trying: 02_08_22_02.bmp
-Accepted! dist: 10
-Trying: 03_02_34_05.bmp
-Accepted! dist: 10
-Trying: 03_02_32_05.bmp
-Accepted! dist: 9
-Trying: 04_08_06_04.bmp
-Accepted! dist: 9
-Trying: 04_08_06_05.bmp
-Accepted! dist: 10
-Trying: 05_07_02_05.bmp
-Accepted! dist: 25
-Trying: 05_08_02_05.bmp
-Accepted! dist: 26
-Trying: 06_06_34_00.bmp
-Accepted! dist: 3
-Trying: 06_06_32_00.bmp
-Accepted! dist: 2
-Trying: 07_01_26_04.bmp
-Accepted! dist: 12
-Trying: 07_01_24_04.bmp
-Accepted! dist: 11
-Trying: 08_08_28_00.bmp
-Accepted! dist: 13
-Trying: 08_07_28_00.bmp
-Accepted! dist: 12
-Trying: 09_07_18_03.bmp
-Accepted! dist: 5
-Trying: 09_06_18_03.bmp
-Accepted! dist: 4
-Trying: 00_08_32_04.bmp
-Rejected! dist: 0
-Trying: 00_00_16_03.bmp
-Accepted! dist: 17
-Trying: 00_01_16_03.bmp
-Accepted! dist: 16
-Trying: 01_05_20_04.bmp
-Accepted! dist: 7
-Trying: 01_06_20_04.bmp
-Accepted! dist: 8
-Trying: 02_00_16_02.bmp
-Accepted! dist: 9
-Trying: 02_00_16_03.bmp
-Accepted! dist: 8
-Trying: 03_02_14_01.bmp
-Accepted! dist: 6
-Trying: 03_02_14_02.bmp
-Accepted! dist: 7
-Trying: 04_06_28_05.bmp
-Accepted! dist: 20
-Trying: 04_06_26_05.bmp
-Accepted! dist: 19
-Trying: 05_01_10_05.bmp
-Accepted! dist: 10
-Trying: 05_02_10_05.bmp
-Accepted! dist: 9
-Trying: 06_04_20_04.bmp
-Accepted! dist: 8
-Trying: 06_04_18_04.bmp
-Accepted! dist: 9
-Trying: 07_08_14_01.bmp
-Accepted! dist: 15
-Trying: 07_07_14_01.bmp
-Accepted! dist: 14
-Trying: 08_06_02_01.bmp
-Accepted! dist: 5
-Trying: 08_05_02_01.bmp
-Accepted! dist: 4
-Trying: 09_00_16_00.bmp
-Accepted! dist: 2
-Trying: 09_01_16_00.bmp
-Accepted! dist: 3
-Trying: 00_03_32_01.bmp
-Accepted! dist: 8
-Trying: 00_04_32_01.bmp
-Accepted! dist: 7
-Trying: 01_03_18_03.bmp
-Accepted! dist: 9
-Trying: 01_03_18_04.bmp
-Accepted! dist: 10
-Trying: 02_05_20_00.bmp
-Accepted! dist: 11
-Trying: 02_06_20_00.bmp
-Accepted! dist: 11
-Trying: 03_02_20_04.bmp
-Accepted! dist: 12
-Trying: 03_02_18_04.bmp
-Accepted! dist: 11
-Trying: 04_05_30_03.bmp
-Accepted! dist: 18
-Trying: 04_05_28_03.bmp
-Accepted! dist: 17
-Trying: 05_07_06_02.bmp
-Accepted! dist: 22
-Trying: 05_07_04_02.bmp
-Accepted! dist: 23
-Trying: 06_02_12_01.bmp
-Accepted! dist: 6
-Trying: 06_03_12_01.bmp
-Accepted! dist: 5
-Trying: 07_00_12_04.bmp
-Accepted! dist: 13
-Trying: 07_00_12_05.bmp
-Accepted! dist: 14
-Trying: 08_00_04_00.bmp
-Accepted! dist: 23
-Trying: 08_00_02_00.bmp
-Accepted! dist: 24
-Trying: 09_05_18_00.bmp
-Accepted! dist: 5
-Trying: 09_06_18_00.bmp
-Accepted! dist: 5
-sumDist: 1079.0
-Starting verification procedures...
-3 tests done.6 tests done.9 tests done.12 tests done.15 tests done.18 tests done.21 tests done.24 tests done.27 tests done.30 tests done.33 tests done.36 tests done.39 tests done.42 tests done.45 tests done.48 tests done.51 tests done.54 tests done.57 tests done.60 tests done.63 tests done.66 tests done.69 tests done.72 tests done.75 tests done.78 tests done.81 tests done.84 tests done.87 tests done.90 tests done.93 tests done.96 tests done.99 tests done.102 tests done.105 tests done.108 tests done.111 tests done.114 tests done.117 tests done.120 tests done.123 tests done.126 tests done.129 tests done.132 tests done.135 tests done.138 tests done.141 tests done.144 tests done.147 tests done.150 tests done.
-Tests completed. Everything seems ok.

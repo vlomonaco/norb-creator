@@ -56,7 +56,7 @@ public class NorbKNN {
 		this(
 			32,
 			32,
-			"/home/vincenzo/all32/L/",
+			"all32/L/",
 			"train_conf.txt",
 			"test_conf.txt",
 			false,

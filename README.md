@@ -90,7 +90,7 @@ java -jar norbCreator.jar --seqExplorer configFileName
 This last command can be used to easily visualize the generated sequences in a nice GUI.
 
 ### Built-in Datasets ###
-Inside the directory "paper_datasets" you can find and download the training and test sets used in the paper. They are plain text files containing the NORB sequences, so you can parse them at your wish or use the code already provided in this tool.
+Inside the directory *paper_datasets* you can find and download the training and test sets used in the paper. They are plain text files containing the NORB sequences, so you can parse them at your wish or use the code already provided in this tool.
 
 They comes with the name *train_conf.txt*, *test_conf2.txt*, *test_conf3.txt*, *test_conf4.txt*. 
 where *test_confX.txt* stands for a test set with *mindist = X* (see the paper for further details).

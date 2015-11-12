@@ -1,7 +1,7 @@
 # NorbCreator #
 
 NorbCreator is a Java tool that can be used to sequentialize [NORB](http://www.cs.nyu.edu/~ylclab/data/norb-v1.0/) (NYU Object Recognition Benchmark) images. 
-It has been originally designe to suit research purposes described in the paper ["Semi-supervised Tuning from Temporal Coherence"](http://arxiv.org/abs/1511.03163) authored Maltoni, D & Lomonaco, V. 
+It has been originally designed to suit research purposes described in the paper ["Semi-supervised Tuning from Temporal Coherence"](http://arxiv.org/abs/1511.03163) authored Maltoni, D & Lomonaco, V. 
 It can also be easily expanded to manage any other image dataset.
 
 **Please, cite the paper above if you want to use this tool.**

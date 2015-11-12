@@ -98,7 +98,7 @@ where *test_confX.txt* stands for a test set with *mindist = X* (see the paper f
 ### Recommendations ###
 This software is **highly experimental** and comes with **no warranties**. It has been specifically designed to create sequences that meet the requirements and a full unit test has been created for the purpose. Other than that, the software is not that flexible and you're free and encouraged to contribute with a pull request and make it better! :-)
 
-Otherwise, please, e-mail us for any problems or errors you may encounter at: *{vincenzo.lomonaco, davide.maltoni}@unibo.it*
+Otherwise, please, e-mail us for any problem or error you may encounter at: *{vincenzo.lomonaco, davide.maltoni}@unibo.it*
 
 
 ### Copyright ###

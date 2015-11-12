@@ -1,11 +1,13 @@
 # NorbCreator #
 
 NorbCreator is a Java tool that can be used to sequentialize [NORB](http://www.cs.nyu.edu/~ylclab/data/norb-v1.0/) (NYU Object Recognition Benchmark) images. 
-It has been originally designet to suit research purposes described in this paper. 
-It can also be easily expanded to manage any other dataset.
+It has been originally designe to suit research purposes described in the paper ["Semi-supervised Tuning from Temporal Coherence"](http://arxiv.org/abs/1511.03163) authored Maltoni, D & Lomonaco, V. 
+It can also be easily expanded to manage any other image dataset.
+
+**Please, cite the paper above if you want to use this tool.**
 
 ### Getting started ###
-The easiest way to use the tool is to [download](https://bitbucket.org/vincenzo_lomonaco/norbcreator/src/d4a99663fbfa6526245affe03801e5f3f172c0fa/norbCreator.jar?at=master) the jar package and run it as follows:
+The easiest way to use the tool is to [download](https://bitbucket.org/vincenzo_lomonaco/norbcreator/src/d4a99663fbfa?at=master) the jar package and run it as follows:
 
 ```
 java -jar norbCreator.jar configFileName
@@ -79,6 +81,12 @@ java -jar norbCreator.jar --sampleTest configFileName
 java -jar norbCreator.jar --seqExplorer configFileName
 
 ```
+
+### Built-in Datasets ###
+Inside the repository you can find and download the training and test sets used in the paper. They are plain text files containing the NRB sequences, so you can parse them at your wish or use the code already provided in this tool.
+
+They comes with the name train_conf.txt, test_conf2.txt, test_conf3.txt, test_conf4.txt. 
+where test_confX.txt stands for a test set with mindist = X (see the paper for further details).
 
 ### Recommendations ###
 This software is highly experimental and comes with no warranties. It has been specifically designed to create sequences that meet the requirements and a full unit test has been created for the purpose. Other than that, the software is not that flexible and you're free and encouraged to contribute with a pull request and make it better! :-)
